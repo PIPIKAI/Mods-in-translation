@@ -36,7 +36,26 @@ return {
             temporary_extra_chips = {['text'] = {[1] = '{C:chips}+#1#{} extra chips this round'}},
             linked_cards = {['text'] = {[1] = '{C:attention}Linked{} in this group:'}},
             drawn_linked_cards = {['text'] = {[1] = '{C:attention}Linked{} in drawn group'}}
-        }
+        },
+        ['zh_CN'] = {
+            copied = '复制！',
+            nothing = '无',
+            chips = '筹码',
+            loop = 'Loop!',
+            chance = '几率',
+            word_and = '和',
+            debuffed = '失效！',
+            pew = 'Biu！',
+            declined = 'Declined...',
+            accepted = 'Accepted!',
+            ouch = '啊哟！',
+            mysterious_tarot = '塔罗牌？',
+            most_played_rank = '（最常出点数）',
+            least_played_hand = '（最少出牌型）',
+            blade = '（1.5X盲注得分要求）',
+            exceeded_score = '越限！',
+            temporary_extra_chips = {['text'] = {[1] = '本回合内{C:chips}+#1#{}额外筹码'}}
+        },
     },
 
     -- Suits
@@ -45,12 +64,22 @@ return {
         ['en-us'] = {
             singular = 'Fleuron',
             plural = 'Fleurons',
+        },
+        ['zh_CN'] = {
+            singular = '印花',
+            plural = '印花',
         }
     },
     halberds = {
         ['en-us'] = {
             singular = 'Halberd',
             plural = 'Halberds',
+        },
+        ['zh_CN'] = {
+            ['name'] = '域外牌',
+            ['text'] = {
+                [1] = '花色为{C:bunc_fleurons}印花{}或{C:bunc_halberds}斧枪{}的牌'
+            }
         }
     },
 
@@ -74,6 +103,12 @@ return {
             description = {
                 '5 cards with different suits'
             }
+        },
+        ['zh_CN'] = {
+            name = '缤彩',
+            description = {
+                '5张花色各不相同的牌'
+            }
         }
     },
     straight_spectrum = {
@@ -84,6 +119,14 @@ return {
                 'each with a different suit'
             },
             extra = 'Royal Spectrum',
+        },
+        ['zh_CN'] = {
+            name = '缤彩顺',
+            description = {
+                "点数连续的5张",
+                "花色各不相同的牌"
+            },
+            extra = '皇家缤彩顺',
         }
     },
     spectrum_house = {
@@ -93,7 +136,14 @@ return {
                 'A Three of a Kind and a Pair with',
                 'each card having a different suit'
             }
-        }
+        },
+        ['zh_CN'] = {
+            name = '缤彩葫芦',
+            description = {
+                '包含一个三条和一个对子',
+                '且每张牌花色各不相同'
+            }
+        },
     },
     spectrum_five = {
         ['en-us'] = {
@@ -101,6 +151,13 @@ return {
             description = {
                 '5 cards with the same rank,',
                 'each with a different suit'
+            },
+        },
+        ['zh_CN'] = {
+            name = '缤彩五条',
+            description = {
+                '点数相同的5张',
+                '花色各不相同的牌'
             },
         }
     },
@@ -144,6 +201,14 @@ return {
                 [2] = '{C:attention}#1#{} selected cards',
                 [3] = 'to {C:bunc_fleurons}Fleurons{}',
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '苍穹',
+            ['text'] = {
+                [1] = '将最多{C:attention}#1#{}张',
+                [2] = '选定卡牌',
+                [3] = '转换为{C:bunc_fleurons}印花',
+            }
         }
     },
     abyss = {
@@ -153,6 +218,14 @@ return {
                 [1] = 'Converts up to',
                 [2] = '{C:attention}#1#{} selected cards',
                 [3] = 'to {C:bunc_halberds}Halberds{}',
+            },
+            ['zh_CN'] = {
+                ['name'] = '深渊',
+                ['text'] = {
+                    [1] = '将最多{C:attention}#1#{}张',
+                    [2] = '选定卡牌',
+                    [3] = '转换为{C:bunc_halberds}深渊',
+                }
             }
         }
     },
@@ -162,22 +235,34 @@ return {
     quaoar = {
         ['en-us'] = {
             name = 'Quaoar'
-        }
+        },
+        ['zh_CN'] = {
+            name = '创神星'
+        },
     },
     haumea = {
         ['en-us'] = {
             name = 'Haumea'
-        }
+        },
+        ['zh_CN'] = {
+            name = '妊神星'
+        },
     },
     sedna = {
         ['en-us'] = {
             name = 'Sedna'
-        }
+        },
+        ['zh_CN'] = {
+            name = '赛德娜星'
+        },
     },
     makemake = {
         ['en-us'] = {
             name = 'Makemake'
-        }
+        },
+        ['zh_CN'] = {
+            name = '鸟神星'
+        },
     },
 
     -- Spectrals
@@ -188,6 +273,13 @@ return {
             ['text'] = {
                 [1] = 'Add {C:dark_edition}Fluorescent{} to',
                 [2] = '{C:attention}#1#{} selected cards in hand'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '净化',
+            ['text'] = {
+                [1] = '为选定的{C:attention}#1#{}张手牌',
+                [2] = '添加{C:dark_edition}荧光{}版本'
             }
         }
     },
@@ -330,6 +422,14 @@ return {
                 -- TODO would be good to have a line for the side
                 -- or colorize the active side
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '磁带',
+            ['text'] = {
+                [1] = '弃牌时，翻转此牌至另一面',
+                [2] = '{C:attention}A面：{}亮色牌在计分时给予{C:chips}+#1#{}筹码',
+                [3] = '{C:attention}B面：{}暗色牌在计分时给予{C:chips}+#2#{}倍率',
+            }
         }
     },
     mosaic = {
@@ -344,6 +444,18 @@ return {
                 [1] = 'Play a 5 card hand',
                 [2] = 'that contains only',
                 [3] = '{C:attention,E:1}Stone{} cards'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '拼花瓷砖小丑',
+            ['text'] = {
+                [1] = '打出的{C:attention}石头牌',
+                [2] = '在计分时',
+                [3] = '给予{C:mult}+#1#{}倍率'
+            },
+            ['unlock'] = {
+                [1] = '单次出牌包含5张牌',
+                [2] = '且均为{C:attention,E:1}石头牌'
             }
         }
     },
@@ -360,7 +472,20 @@ return {
                 [2] = '{E:1,C:attention}Enhanced{} cards in',
                 [3] = 'your deck'
             }
-        }
+        },
+        ['zh_CN'] = {
+            ['name'] = '体素小丑',
+            ['text'] = {
+                [1] = '{X:mult,C:white}X#1#{}倍率',
+                [2] = '完整牌组中的每张',
+                [3] = '{C:attention}增强卡牌{}使倍率{X:mult,C:white}-X#2#',
+                [4] = '{C:inactive}（当前为{X:mult,C:white}X#3#{C:inactive}倍率）'
+            },
+            ['unlock'] = {
+                [1] = '牌组中拥有至少',
+                [2] = '{C:attention}10{}张{E:1,C:attention}增强卡牌'
+            }
+        },
     },
     crop_circles = {
         ['en-us'] = {
@@ -369,6 +494,14 @@ return {
                 [1] = 'Base suit {C:clubs}Clubs{} give {C:mult}+3{} Mult,',
                 [2] = '{C:attention}8s{} give {C:mult}+2{} Mult,',
                 [3] = '{C:attention}Qs{}, {C:attention}10s{}, {C:attention}9s{}, {C:attention}6s{} give {C:mult}+1{} Mult'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '麦田怪圈',
+            ['text'] = {
+                [1] = '{C:clubs}梅花{}牌给予{C:mult}+3{}倍率',
+                [2] = '{C:attention}8{}给予{C:mult}+2{}倍率',
+                [3] = '{C:attention}Q{}、{C:attention}10{}、{C:attention}9{}和{C:attention}6{}给予{C:mult}+1{}倍率'
             }
         }
     },
@@ -380,6 +513,15 @@ return {
                 [2] = 'Base suit {C:clubs}Clubs{} give {C:mult}+3{} Mult,',
                 [3] = '{C:attention}8s{} give {C:mult}+2{} Mult,',
                 [4] = '{C:attention}Qs{}, {C:attention}10s{}, {C:attention}9s{}, {C:attention}6s{} give {C:mult}+1{} Mult'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '麦田怪圈',
+            ['text'] = {
+                [1] = '{C:bunc_fleurons}印花{}牌给予{C:mult}+4{}倍率',
+                [2] = '{C:clubs}梅花{}牌给予{C:mult}+3{}倍率',
+                [3] = '{C:attention}8{}给予{C:mult}+2{}倍率',
+                [4] = '{C:attention}Q{}、{C:attention}10{}、{C:attention}9{}和{C:attention}6{}给予{C:mult}+1{}倍率'
             }
         }
     },
@@ -394,6 +536,17 @@ return {
             ['unlock'] = {
                 [1] = 'Complete the {E:1,C:attention}X-ray Vision',
                 [2] = 'challenge'
+            },
+            ['zh_CN'] = {
+                ['name'] = 'X光',
+                ['text'] = {
+                    [1] = '每抽到一张背面朝上的牌',
+                    [2] = '本牌获得{X:mult,C:white}X#1#{}倍率',
+                    [3] = '{C:inactive}（当前为{X:mult,C:white}X#2#{C:inactive}倍率）'
+                },
+                ['unlock'] = {
+                    [1] = '完成{E:1,C:attention}透视眼{}挑战'
+                }
             }
         }
     },
@@ -624,6 +777,16 @@ return {
                 [5] = '{C:inactive}(Currently {C:attention}X#2#{C:inactive} to {C:green,E:1,S:1.1}probabilities{C:inactive})'
                 -- TODO not sure how to word non-countable
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '零蛋凌旦',
+            ['text'] = {
+                [1] = '每有一张{C:attention}无点数{}、{C:attention}点数为0',
+                [2] = '或{C:attention}非数字牌{}计分时',
+                [3] = '本牌在{C:attention}当前回合{}内',
+                [4] = '获得{C:attention}#1#X{C:green,E:1,S:1.1}几率加成',
+                [5] = '{C:inactive}（当前{C:green,E:1,S:1.1}几率加成{C:inactive}：{C:attention}X#2#{C:inactive}）'
+            }
         }
     },
     nil_bill = {
@@ -716,6 +879,14 @@ return {
                 [1] = 'Defeat {E:1,C:attention}Crimson Heart',
                 [2] = 'without disabling it'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '征服',
+            ['text'] = {
+                [1] = '{C:chips}+#1#{}筹码',
+                [2] = '选择{C:attention}盲注{}时',
+                [3] = '使随机一张小丑牌{C:red}失效'
+            }
         }
     },
     hierarchy_of_needs = {
@@ -742,6 +913,16 @@ return {
                 [1] = 'Play a hand that',
                 [2] = 'contains {E:1,C:attention}Stone{}, {E:1,C:attention}Steel,',
                 [3] = 'and {E:1,C:attention}Gold{} cards'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '需求层次',
+            ['text'] = {
+                [1] = '{C:attention}完整牌组{}中',
+                [2] = '每有一种{C:attention}花色',
+                [3] = '拥有{C:attention}所有点数的牌',
+                [4] = '{C:red}+#1#{}倍率',
+                [5] = '{C:inactive}（当前为{C:red}+#2#{C:inactive}倍率）'
             }
         }
     },
@@ -821,6 +1002,15 @@ return {
                 [1] = 'Defeat {E:1,C:attention}Cerulean Bell',
                 [2] = 'without disabling it'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '走火',
+            ['text'] = {
+                [1] = '{X:mult,C:white}X#1#{}倍率',
+                [2] = '{C:attention}选定{}卡牌时',
+                [3] = '有{C:green}#2#/#3#{}的几率',
+                [4] = '直接触发出牌'
+            }
         }
     },
     hopscotch = {
@@ -830,6 +1020,13 @@ return {
                 [1] = 'Gain {C:red}+#1#{} discard',
                 [2] = 'if played hand',
                 [3] = 'contains a {C:attention}Straight{}'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '跳房子',
+            ['text'] = {
+                [1] = '若出牌牌型为{C:attention}顺子',
+                [2] = '弃牌次数{C:red}+#1#'
             }
         }
     },
@@ -1167,7 +1364,14 @@ return {
                 [1] = 'Playing or Discarding costs',
                 [2] = 'both hand and discard'
             }
-        }
+        },
+        ['zh_CN'] = {
+            ['name'] = '围篱',
+            ['text'] = {
+                [1] = '出牌或弃牌时',
+                [2] = '出牌和弃牌次数均会被消耗'
+            }
+        },
     },
     umbrella = {
         ['en-us'] = {
@@ -1175,6 +1379,13 @@ return {
             ['text'] = {
                 [1] = 'After Play, flip all',
                 [2] = 'cards in hand face down'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '伞',
+            ['text'] = {
+                [1] = '出牌后，将所有',
+                [2] = '卡牌翻至背面'
             }
         }
     },
@@ -1192,6 +1403,13 @@ return {
             ['text'] = {
                 [1] = 'After Play or Discard,',
                 [2] = 'flip all cards'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '秋千',
+            ['text'] = {
+                [1] = '出牌或弃牌后',
+                [2] = '将所有卡牌翻面'
             }
         }
     },
@@ -1274,6 +1492,12 @@ return {
                 [1] = 'First time score exceeds #1#',
                 [2] = 'makes played hand score 0'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '刀锋',
+            ['text'] = {
+                [1] = '首次超过#1#的得分归零',
+            }
         }
     },
     claw = {
@@ -1292,6 +1516,13 @@ return {
                 [1] = 'Selected cards are',
                 [2] = 'flipped face down'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '帷幕',
+            ['text'] = {
+                [1] = '选中卡牌时',
+                [2] = '将其翻至背面'
+            }
         }
     },
     cadaver = {
@@ -1309,6 +1540,12 @@ return {
                 [1] = 'Leftmost Joker',
                 [2] = 'is debuffed'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '风',
+            ['text'] = {
+                [1] = '最左侧的小丑牌失效',
+            }
         }
     },
     prince = {
@@ -1318,6 +1555,12 @@ return {
                 [1] = 'All Jokers are debuffed',
                 [2] = 'until first hand is played'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '王子',
+            ['text'] = {
+                [1] = '首次出牌前所有小丑牌失效',
+            }
         }
     },
     depths = {
@@ -1326,6 +1569,13 @@ return {
             ['text'] = {
                 [1] = 'After Play, gain Eternal,',
                 [2] = 'Perishable, or Scattering tag'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '纵深',
+            ['text'] = {
+                [1] = '出牌后，随机获得永恒、',
+                [2] = '易腐或出租标签'
             }
         }
     },
@@ -1366,6 +1616,13 @@ return {
                 [1] = 'Cards not played previously',
                 [2] = 'this Ante are debuffed'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '靛蓝之塔',
+            ['text'] = {
+                [1] = '当前底注中未打出过的牌',
+                [2] = '全部失效'
+            }
         }
     },
     magenta_dagger = {
@@ -1375,6 +1632,13 @@ return {
                 [1] = 'Discarding cards plays them',
                 [2] = 'and subtracts scored value'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '洋红匕首',
+            ['text'] = {
+                [1] = '弃牌反而会将其打出',
+                [2] = '并倒扣计得的分数'
+            }
         }
     },
     turquoise_shield = {
@@ -1383,6 +1647,13 @@ return {
             ['text'] = {
                 [1] = 'Excess score this Ante adds',
                 [2] = "to this blind's required score"
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '青绿之盾',
+            ['text'] = {
+                [1] = '当前底注中各回合得分的超额部分',
+                [2] = "将被添加至本盲注的得分要求"
             }
         }
     },
@@ -1451,6 +1722,13 @@ return {
                 [2] = 'Joker is free and',
                 [3] = 'becomes {C:dark_edition}Glitter'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '溢彩标签',
+            ['text'] = {
+                [1] = '商店中的下一张无版本小丑牌',
+                [2] = '将变为{C:dark_edition}溢彩{}且售价为{C:money}$0'
+            }
         }
     },
     fluorescent_tag = {
@@ -1461,6 +1739,13 @@ return {
                 [2] = 'Joker is free and',
                 [3] = 'becomes {C:dark_edition}Fluorescent'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '荧光标签',
+            ['text'] = {
+                [1] = '商店中的下一张无版本小丑牌',
+                [2] = '将变为{C:dark_edition}荧光{}且售价为{C:money}$0'
+            }
         }
     },
     chips = {
@@ -1468,6 +1753,12 @@ return {
             ['name'] = 'Chips Tag',
             ['text'] = {
                 [1] = '{C:chips}+#1#{} Chips next hand'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '筹码标签',
+            ['text'] = {
+                [1] = '下次出牌{C:chips}+#1#{}筹码'
             }
         }
     },
@@ -1477,6 +1768,12 @@ return {
             ['text'] = {
                 [1] = '{C:mult}+#1#{} Mult next hand',
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '倍率标签',
+            ['text'] = {
+                [1] = '下次出牌{C:mult}+#1#{}倍率'
+            }
         }
     },
     xmult = {
@@ -1485,6 +1782,12 @@ return {
             ['text'] = {
                 [1] = '{X:mult,C:white}X#1#{} Mult next hand',
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '超级倍率标签',
+            ['text'] = {
+                [1] = '下次出牌{X:mult,C:white}X#1#{}倍率'
+            }
         }
     },
     xchips = {
@@ -1492,6 +1795,12 @@ return {
             ['name'] = 'Ultrachips Tag',
             ['text'] = {
                 [1] = '{X:chips,C:white}X#1#{} Chips next hand'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '极限筹码标签',
+            ['text'] = {
+                [1] = '下次出牌{X:chips,C:white}X#1#{}筹码'
             }
         }
     },
@@ -1502,6 +1811,13 @@ return {
                 [1] = 'Next {C:attention}Standard Pack{} opened',
                 [2] = 'has only {C:bunco_exotic}Exotic cards'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '金缕标签',
+            ['text'] = {
+                [1] = '下一个打开的标准包',
+                [2] = '将仅包含{C:bunco_exotic}异域{}牌'
+            }
         }
     },
     eternal = {
@@ -1510,6 +1826,13 @@ return {
             ['text'] = {
                 [1] = 'Next shop Joker',
                 [2] = 'will gain {C:attention}Eternal{} sticker'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '永恒标签',
+            ['text'] = {
+                [1] = '下一间商店内的小丑牌',
+                [2] = '将带有{C:attention}永恒{}标贴'
             }
         }
     },
@@ -1520,6 +1843,13 @@ return {
                 [1] = 'Next shop Joker',
                 [2] = 'will gain {C:attention}Perishable{} sticker'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '易腐标签',
+            ['text'] = {
+                [1] = '下一间商店内的小丑牌',
+                [2] = '将带有{C:attention}易腐{}标贴'
+            }
         }
     },
     rental = {
@@ -1528,6 +1858,13 @@ return {
             ['text'] = {
                 [1] = 'Next shop Joker',
                 [2] = 'will gain {C:attention}Rental{} sticker'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '出租标签',
+            ['text'] = {
+                [1] = '下一间商店内的小丑牌',
+                [2] = '将带有{C:attention}出租{}标贴'
             }
         }
     },
@@ -1568,6 +1905,13 @@ return {
             ['text'] = {
                 [1] = '{X:chips,C:white}X#1#{} Chips'
             }
+        },
+        ['zh_CN'] = {
+            ['name'] = '溢彩',
+            ['label'] = '溢彩',
+            ['text'] = {
+                [1] = '{X:chips,C:white}X#1#{}筹码'
+            }
         }
     },
     fluorescent_edition = {
@@ -1577,6 +1921,15 @@ return {
             ['text'] = {
                 [1] = 'Cannot be flipped, debuffed',
                 [2] = 'or forced to be selected'
+            }
+        },
+        ['zh_CN'] = {
+            ['name'] = '荧光',
+            ['label'] = '荧光',
+            ['text'] = {
+                [1] = '保持正面朝上',
+                [2] = '不可强制选定',
+                [3] = '永不失效'
             }
         }
     },
