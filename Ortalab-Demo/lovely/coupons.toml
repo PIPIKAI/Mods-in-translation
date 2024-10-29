@@ -1,0 +1,83 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 1
+
+## Window Shopping + Infinite Scroll
+[[patches]]
+[patches.pattern]
+target = 'functions/state_events.lua'
+pattern = '''G.GAME.current_round.free_rerolls = #chaos'''
+position = 'after'
+match_indent = true
+payload = '''G.GAME.current_round.free_rerolls = G.GAME.current_round.free_rerolls + (G.GAME.current_round.ortalab_rerolls or 0)'''
+
+# Catalog
+[[patches]]
+[patches.pattern]
+target = 'game.lua'
+pattern = '''G.GAME.current_round.used_packs = G.GAME.current_round.used_packs or {}'''
+position = 'before'
+match_indent = true
+payload = '''if i == 1 and G.GAME.modifiers.ortalab_boosters then for _ = 1, G.GAME.modifiers.ortalab_boosters do Ortalab.spawn_booster() end end'''
+
+# Ad Campaign
+[[patches]]
+[patches.pattern]
+target = 'functions/state_events.lua'
+pattern = '''G.GAME.current_round.voucher = get_next_voucher_key()'''
+position = 'after'
+match_indent = true
+payload = '''if G.GAME.used_vouchers['v_ortalab_ad_campaign'] then G.GAME.current_round.voucher_2 = get_next_voucher_key() end'''
+
+[[patches]]
+[patches.pattern]
+target = 'game.lua'
+pattern = '''if G.GAME.current_round.voucher and G.P_CENTERS[G.GAME.current_round.voucher] then'''
+position = 'before'
+match_indent = true
+payload = '''
+if G.GAME.current_round.voucher_2 and G.P_CENTERS[G.GAME.current_round.voucher_2] then
+    G.shop_vouchers.config.card_limit = 2
+    local card = Card(G.shop_vouchers.T.x + G.shop_vouchers.T.w / 2, G.shop_vouchers.T.y, G.CARD_W, G.CARD_H,
+        G.P_CARDS.empty, G.P_CENTERS[G.GAME.current_round.voucher_2], {
+            bypass_discovery_center = true,
+            bypass_discovery_ui = true
+        })
+    create_shop_card_ui(card, 'Voucher', G.shop_vouchers)
+    G.shop_vouchers:emplace(card)
+
+end'''
+[[patches]]
+[patches.pattern]
+target = 'functions/common_events.lua'
+pattern = '''if G.shop_vouchers and G.shop_vouchers.cards then'''
+position = 'before'
+match_indent = true
+payload = '''if G.GAME.current_round.voucher and G.GAME.current_round.voucher == v.key then include = false end'''
+
+[[patches]]
+[patches.pattern]
+target = 'game.lua'
+pattern = '''G.shop_vouchers:emplace(card)'''
+position = 'at'
+match_indent = true
+payload = '''G.shop_vouchers:emplace(card, 'front')'''
+
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = '''G.GAME.pack_choices = self.config.center.config.choose or 1'''
+position = 'after'
+match_indent = true
+payload = '''if self.config.center.group_key and self.config.center.group_key:find('loteria') and G.GAME.used_vouchers['v_ortalab_cantor'] then print('pack'); G.GAME.pack_choices = G.GAME.pack_choices + G.GAME.Ortalab_loteria_voucher end'''
+
+[[patches]]
+[patches.pattern]
+target = 'card.lua'
+pattern = '''local used_tarot = copier or self'''
+position = 'after'
+match_indent = true
+payload = '''if self.config.center.set == 'Loteria' and G.GAME.used_vouchers['v_ortalab_tabla'] then
+    if self.ability.extra.amount then self.ability.extra.amount = self.ability.extra.amount + G.GAME.Ortalab_loteria_voucher_2 end
+end'''
