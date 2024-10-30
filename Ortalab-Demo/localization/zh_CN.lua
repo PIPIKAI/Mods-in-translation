@@ -755,7 +755,7 @@ return {
 				["text"] = {
 					"增强 {C:attention}#1#{}张随机的牌",
                     "变为",
-                    "{C:attention}弯曲牌s",
+                    "{C:attention}弯曲牌",
 				},
 			},
 			["c_ortalab_lot_melon"] = {
@@ -763,27 +763,27 @@ return {
 				["text"] = {
 					"增强 {C:attention}#1#{}张随机的牌",
                     "变为",
-                    "{C:attention}再生牌s",
+                    "{C:attention}再生牌",
 				},
 			},
 			["c_ortalab_lot_mandolin"] = {
-				["name"] = "The Mandolin",
+				["name"] = "曼陀铃",
 				["text"] = {
 					"增强 {C:attention}#1#{}张随机的牌",
                     "变为",
-                    "{C:attention}Post Cards",
+                    "{C:attention}名额牌",
 				},
 			},
 			["c_ortalab_lot_rose"] = {
-				["name"] = "The Rose",
+				["name"] = "玫瑰",
 				["text"] = {
 					"增强 {C:attention}#1#{}张随机的牌",
                     "变为",
-                    "{C:attention}IOU Cards",
+                    "{C:attention}白条牌",
 				},
 			},
             ["c_ortalab_lot_tree"] = {
-				["name"] = "The Tree",
+				["name"] = "树",
 				["text"] = {
 					"Turn {C:attention}#1#{} selected",
                     "cards into a suit",
@@ -791,32 +791,32 @@ return {
 				},
 			},
             ["c_ortalab_lot_siren"] = {
-				["name"] = "The Siren",
+				["name"] = "海妖",
 				["text"] = {
-					"Enhances {C:attention}#1#{} random",
-                    "cards into",
-                    "{C:attention}锈蚀牌s",
+					"增强 {C:attention}#1#{}张随机的牌",
+                    "变为",
+                    "{C:attention}锈蚀牌",
 				},
 			},
 			["c_ortalab_lot_bird"] = {
-				["name"] = "The Bird",
+				["name"] = "鸟",
 				["text"] = {
-					"Enhances {C:attention}#1#{} random",
-                    "cards into",
+					"增强 {C:attention}#1#{}张随机的牌",
+                    "变为",
                     "{C:attention}砂岩牌",
 				},
 			},
             ["c_ortalab_lot_rooster"] = {
-				["name"] = "The Rooster",
+				["name"] = "公鸡",
 				["text"] = {
 					"Creates a copy of a",
-                    "{C:loteria}Loteria{} or {C:Zodiac}星座牌{}",
+                    "{C:loteria}乐透牌{} 或 {C:Zodiac}星座牌{}",
                     "used during this run",
-                    "{s:0.8,C:inactive}The Rooster excluded"
+                    "{s:0.8,C:inactive}排除自己这张牌"
 				},
 			},
             ["c_ortalab_lot_pear"] = {
-				["name"] = "The Pear",
+				["name"] = "梨",
 				["text"] = {
 					"{C:green}#1# in #2#{} chance to add",
                     "{C:dark_edition}Anaglyphic{}, {C:dark_edition}Fluorescent{} or",
@@ -825,7 +825,7 @@ return {
 				},
 			},
             ["c_ortalab_lot_parrot"] = {
-				["name"] = "The Parrot",
+				["name"] = "鹦鹉",
 				["text"] = {
 					"Turn {C:attention}#1#{} selected",
                     "cards into a suit",
@@ -833,15 +833,15 @@ return {
 				},
 			},
             ["c_ortalab_lot_ladder"] = {
-				["name"] = "The Ladder",
+				["name"] = "梯",
 				["text"] = {
-					"Enhances {C:attention}#1#{} random",
-                    "cards into",
-                    "{C:attention}Index Cards",
+					"增强 {C:attention}#1#{}张随机的牌",
+                    "变为",
+                    "{C:attention}索引牌",
 				},
 			},
             ["c_ortalab_lot_heron"] = {
-				["name"] = "The Heron",
+				["name"] = "鹭",
 				["text"] = {
 					"Earn {C:money}$#1#{} for every",
 					"{C:chips}#2# Chip value{} of",
@@ -849,7 +849,7 @@ return {
 				},
 			},
             ["c_ortalab_lot_heart"] = {
-				["name"] = "The Heart",
+				["name"] = "心",
 				["text"] = {
 					"Turn {C:attention}#1#{} selected",
                     "cards into a suit",
@@ -857,14 +857,14 @@ return {
 				},
 			},
             ["c_ortalab_lot_harp"] = {
-				["name"] = "The Harp",
+				["name"] = "竖琴",
 				["text"] = {
 					"Combine {C:attention}2{} selected",
 					"cards into {C:attention}1"
 				},
 			},
             ["c_ortalab_lot_hand"] = {
-				["name"] = "The Hand",
+				["name"] = "手",
 				["text"] = {
 					"Turn {C:attention}#1#{} selected",
 					"{C:attention}Joker{} into a random",
@@ -872,7 +872,7 @@ return {
 				},
 			},
             ["c_ortalab_lot_flag"] = {
-				["name"] = "The Flag",
+				["name"] = "旗",
 				["text"] = {
 					"Increases or decreases",
 					"rank of up to {C:attention}#1#{}",
@@ -881,45 +881,44 @@ return {
 				},
 			},
             ["c_ortalab_lot_dandy"] = {
-				["name"] = "The Dandy",
+				["name"] = "花花公子",
 				["text"] = {
-					"Enhances {C:attention}#1#{} random",
-                    "cards into",
+					"增强 {C:attention}#1#{}张随机的牌",
+                     "变为",
                     "{C:attention}矿石牌",
 				},
 			},
             ["c_ortalab_lot_bottle"] = {
-				["name"] = "The Bottle",
+				["name"] = "瓶",
 				["text"] = {
-					"Create {C:attention}#1# modified",
-					"cards in your hand"
+					"创建 {C:attention}#1# 张修改牌",
+					"在你的手牌中"
 				},
 			},
             ["c_ortalab_lot_barrel"] = {
-				["name"] = "The Barrel",
+				["name"] = "桶",
 				["text"] = {
-					"Create up to {C:attention}#1#",
-                    "random {C:loteria}Loteria{} cards",
-                    "{S:0.8,C:inactive}(Must have room)"
+					"创建{C:attention}#1#",
+                    "张随机的 {C:loteria}乐透牌{}",
+                    "{S:0.8,C:inactive}(必须有空间)"
 				},
 			},
             ["c_ortalab_lot_scorpion"] = {
-				["name"] = "The Scorpion",
+				["name"] = "蝎子",
 				["text"] = {
-					"Create up to {C:attention}#1#",
-                    "random {C:Zodiac}星座牌{}",
-                    "{S:0.8,C:inactive}(Must have room)",
+					"创建{C:attention}#1#",
+                    "张随机的 {C:Zodiac}星座牌{}",
+                    "{S:0.8,C:inactive}(必须有空间)",
 				},
 			},
 			["c_ortalab_lot_bonnet"] = {
-				["name"] = "The Bonnet",
+				["name"] = "帽子",
 				["text"] = {
-					"Gain between {C:money}-$#1#",
-                    "and {C:money}$#2#"
+					"获得 {C:money}-$#1# ~{C:money}$#2#",
 				},
 			},
 			["c_ortalab_lot_boot"] = {
-				["name"] = "The Boot",
+				["name"] = "靴子",
 				["text"] = {
 					"Turn {C:attention}#1#{} selected",
                     "cards into a suit",
@@ -1094,18 +1093,16 @@ return {
 		},
 		["Tag"] = {
 			["tag_ortalab_common"] = {
-				["name"] = "Common Patch",
+				["name"] = "普通补丁",
 				["text"] = {
-					"Shop has a free",
-					"{C:blue}Common Joker{} with",
-					"a random {C:dark_edition}edition"
+					"商店有一个免费的",
+					"随机{C:dark_edition}版本 {C:blue}普通小丑 {} ",
 				},
 			},
 			["tag_ortalab_slipup"] = {
 				["name"] = "Slip-Up Patch",
 				["text"] = {
-					"{C:red}+#1#{} discards",
-					"next round"
+					"下回合{C:red}+#1#{} 弃牌",
 				},
 			},
 			["tag_ortalab_slayer"] = {
