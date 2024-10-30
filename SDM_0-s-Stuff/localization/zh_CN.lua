@@ -307,38 +307,36 @@ return {
         },
         Back = {
             b_sdm_0_s = {
-                name = "SDM_0's Deck",
+                name = "SDM_0's 牌组",
                 text = {
-                    "Start run with",
-                    "{C:attention}#1#{} random {C:eternal}Eternal non-{C:legendary}legendary",
-                    "{C:attention}SDM_0's Stuff{} jokers",
+                    "以{C:attention}#1#{} 张随机的 {C:eternal}永恒 非-{C:legendary}传奇",
+                    "{C:attention}SDM_0's Stuff{} 小丑开始",
                 },
             },
             b_sdm_bazaar = {
-                name = "Bazaar Deck",
+                name = "巴扎牌组",
                 text = {
-                    "Start run with",
-                    "{C:attention}#1#{} random {C:attention}SDM_0's Stuff{}",
-                    "consumables",
+                    "以{C:attention}#1#{} 张随机的 {C:attention}SDM_0's Stuff{}",
+                    "消耗牌开始",
                 },
             },
             b_sdm_sandbox = {
-                name = "Sandbox Deck",
+                name = "沙箱牌组",
                 text = {
-                    "{C:attention}+#1#{} Joker Slots",
-                    "{C:red}+#2#{} Ante to win",
+                    "{C:attention}+#1#{}小丑槽",
+                    "{C:red}+#2#{} 底注才能赢",
                 }
             },
             b_sdm_lucky_7 = {
-                name = "Lucky 7 Deck",
+                name = "幸运 7 牌组",
                 text = {
-                    "Start run with",
-                    "an {C:eternal}Eternal{} {C:attention,T:j_sdm_lucky_joker}Lucky Joker",
-                    "Every {C:attention}7{} is a {C:attention,T:m_lucky}Lucky{} card",
+                    "以一张",
+                    " {C:eternal}永恒{} {C:attention,T:j_sdm_lucky_joker}幸运小丑{}开始",
+                    "每张 {C:attention}7{} 都是 {C:attention,T:m_lucky}幸运牌{} ",
                 }
             },
             b_sdm_dna = {
-                name = "DNA Deck",
+                name = "DNA 牌组",
                 text = {
                     "{C:attention}1{} playing card from",
                     "{C:attention}winning poker hand{}",
@@ -346,62 +344,61 @@ return {
                 }
             },
             b_sdm_hieroglyph = {
-                name = "Hieroglyph Deck",
+                name = "象形文字牌组",
                 text = {
-                    "{C:spectral}Spectral{} cards may",
-                    "appear in the shop,",
-                    "start with an {C:spectral,T:c_ankh}Ankh{} card",
+                    "{C:spectral}幻灵牌{} 可能",
+                    "出现在商店中,",
+                    "以一张 {C:spectral,T:c_ankh}生命十字章{} 开始",
                 }
             },
             b_sdm_xxl = {
-                name = "XXL Deck",
+                name = "XXL 牌组",
                 text = {
-                    "Start with {C:attention}double{}",
-                    "the deck size",
+                    "{C:attention}两倍{}",
+                    "牌组大小",
                 }
             },
             b_sdm_hoarder = {
-                name = "Hoarder Deck",
+                name = "囤积者牌组",
                 text = {
-                    "At end of each Round:",
-                    "{C:money}$#1#{} per remaining {C:red}Discard",
-                    "Extra {C:blue}Hands{} no longer earn money",
-                    "Earn no {C:attention}Interest{} at end of round"
+                    "每回合结束后:",
+                    "每剩余一次弃牌获得{C:money}$#1#{}",
+                    "剩余的 {C:blue}出牌{} 不在获得钱",
+                    "回合结束后不在获得{C:attention}利息{} "
                 }
             },
             b_sdm_deck_of_stuff = {
-                name = "Deck of Stuff",
+                name = "SDM_0牌组++",
                 text = {
-                    "Combines every",
+                    "获得每个",
                     "{C:attention}SDM_0's Stuff{}",
-                    "deck effect"
+                    "的牌组效果"
                 }
             },
         },
         Tarot = {
             c_sdm_sphinx = {
-                name = "The Sphinx",
+                name = "斯芬克斯",
                 text = {
-                    "Add {C:dark_edition}Foil{}, {C:dark_edition}Holographic{},",
-                    "or {C:dark_edition}Polychrome{} edition to",
-                    "a random {C:attention}card{} in hand"
+                    "添加 {C:dark_edition}闪箔{}, {C:dark_edition}多彩{},",
+                    "或 {C:dark_edition}镭射{} 版本到",
+                    "一张随机 {C:attention}手牌{}上"
                 }
             }
         },
         Spectral = {
             c_sdm_sacrifice = {
-                name = "Sacrifice",
+                name = "祭祀",
                 text = {
-                    "{C:attention}+#1#{} Joker Slot,",
-                    "{C:red}-#2#{} hand,",
-                    "{C:red}-#3#{} discard"
+                    "{C:attention}+#1#{} 小丑槽,",
+                    "{C:red}-#2#{} 出牌次数,",
+                    "{C:red}-#3#{} 弃牌"
                 }
             },
             c_sdm_morph = {
-                name = "Morph",
+                name = "幻影",
                 text = {
-                    "Swap {C:attention}#1#{} #2#",
-                    "with another one"
+                    "和另外一个交换 {C:attention}#1#{} #2#",
                 }
             }
         },
@@ -415,68 +412,66 @@ return {
                 }
             },
             modified_card = {
-                name = "Modified",
+                name = "改版",
                 text = {
-                    "Enhancement, seal,",
-                    "edition"
+                    "增强, 封蜡,",
+                    "版本"
                 }
             },
             chaos_exceptions = {
-                name = "Exceptions",
+                name = "异常",
                 text = {
-                    "Round score, goal score,",
-                    "hand level, and descriptions",
+                    "回合分数, 目标分数,",
+                    "手牌等级,  描述",
                 }
             },
             perishable_no_debuff = {
-                name = "Perishable",
+                name = "易腐",
                 text = {
-                    "Debuffed after",
-                    "{C:attention}#1#{} rounds"
+                    "{C:attention}#1#{} 回合后",
+                    "失效",
                 }
             },
             resources = {
-                name = "Resources",
+                name = "资源",
                 text = {
-                    "Hand, discard, dollar, handsize,",
-                    "joker slot, consumable slot"
+                    "出牌, 弃牌, 金币, 手牌数量,",
+                    "小丑槽位, 消耗槽位"
                 }
             }
         },
         Sleeve = {
             sleeve_sdm_0_s = {
-                name = "SDM_0's Sleeve",
+                name = "SDM_0's 牌套",
                 text = {
-                    "Start run with",
-                    "{s:0.9,C:attention}#1#{s:0.9} random {s:0.9,C:eternal}Eternal non-{s:0.9,C:legendary}legendary",
-                    "{C:attention}SDM_0's Stuff{} jokers",
+                    "以{C:attention}#1#{} 张随机的 {C:eternal}永恒 非-{C:legendary}传奇",
+                    "{C:attention}SDM_0's Stuff{} 小丑开始",
                 },
             },
             sleeve_sdm_bazaar = {
-                name = "Bazaar Sleeve",
+                name = "巴扎牌套",
                 text = {
-                    "Start run with",
-                    "{C:attention}#1#{} random {C:attention}SDM_0's Stuff{}",
-                    "consumables",
+                    "以{C:attention}#1#{} 张随机的 {C:attention}SDM_0's Stuff{}",
+                    "消耗牌开始",
                 },
             },
             sleeve_sdm_sandbox = {
-                name = "Sandbox Sleeve",
+                name = "沙箱牌套",
                 text = {
-                    "{C:attention}+#1#{} Joker Slots",
-                    "{C:red}+#2#{} Ante to win",
+                    "{C:attention}+#1#{}小丑槽",
+                    "{C:red}+#2#{} 底注才能赢",
                 }
             },
             sleeve_sdm_lucky_7 = {
-                name = "Lucky 7 Sleeve",
+                name = "幸运 7 牌套",
                 text = {
-                    "Start run with",
-                    "an {C:eternal}Eternal{} {C:attention,T:j_sdm_lucky_joker}Lucky Joker",
-                    "Every {C:attention}7{} is a {C:attention,T:m_lucky}Lucky{} card",
+                    "以一张",
+                    " {C:eternal}永恒{} {C:attention,T:j_sdm_lucky_joker}幸运小丑{}开始",
+                    "每张 {C:attention}7{} 都是 {C:attention,T:m_lucky}幸运牌{} ",
                 }
             },
             sleeve_sdm_lucky_7_alt = {
-                name = "Lucky 7 Sleeve",
+                name = "幸运 7 牌套中套",
                 text = {
                     "{C:attention,T:j_sdm_lucky_joker}Lucky Joker{} is {C:dark_edition}Negative{}",
                     "Doubles all {C:attention}listed",
@@ -484,7 +479,7 @@ return {
                 }
             },
             sleeve_sdm_dna = {
-                name = "DNA Sleeve",
+                name = "DNA 牌套",
                 text = {
                     "{C:attention}1{} playing card from",
                     "{C:attention}winning poker hand{}",
@@ -492,74 +487,73 @@ return {
                 }
             },
             sleeve_sdm_hieroglyph = {
-                name = "Hieroglyph Sleeve",
+                name = "象形文字牌套",
                 text = {
-                    "{C:spectral}Spectral{} cards may",
-                    "appear in the shop,",
-                    "start with an {C:spectral,T:c_ankh}Ankh{} card",
+                    "{C:spectral}幻灵牌{} 可能",
+                    "出现在商店中,",
+                    "以一张 {C:spectral,T:c_ankh}生命十字章{} 开始",
                 }
             },
             sleeve_sdm_hieroglyph_ghost = {
-                name = "Hieroglyph Sleeve",
+                name = "象形文字牌套",
                 text = {
-                    "{C:spectral}Spectral{} cards appearance rate",
-                    "in the shop doubles",
-                    "Start with an {C:spectral,T:c_ankh}Ankh{} card",
+                    "{C:spectral}幻灵牌{} ",
+                    "出现在商店中的概率双倍,",
+                    "以一张 {C:spectral,T:c_ankh}生命十字章{} 开始",
                 }
             },
             sleeve_sdm_hieroglyph_alt = {
-                name = "Hieroglyph Sleeve",
+                name = "象形文字牌套中套",
                 text = {
-                    "{C:spectral}Spectral{} cards appearance rate",
-                    "in the shop doubles,",
-                    "{C:spectral}Spectral Packs{} have {C:attention}#1#{}",
-                    "extra options to choose from",
+                    "{C:spectral}幻灵牌{} ",
+                    "出现在商店中的概率双倍,",
+                    "{C:spectral}幻灵包{} 将有额外 {C:attention}#1#{}个选择",
                 }
             },
             sleeve_sdm_xxl = {
                 name = "XXL Sleeve",
                 text = {
-                    "Start with {C:attention}double{}",
-                    "the deck size",
+                    "{C:attention}两倍{}",
+                    "牌组大小",
                 }
             },
             sleeve_sdm_hoarder = {
-                name = "Hoarder Sleeve",
+                name = "囤积者牌套",
                 text = {
-                    "At end of each Round:",
-                    "{C:money}$#1#{} per remaining {C:red}Discard",
-                    "{s:0.8}Extra {s:0.8,C:blue}Hands{s:0.8} no longer earn money",
-                    "{s:0.8}Earn no {s:0.8,C:attention}Interest{s:0.8} at end of round"
+                    "每回合结束后:",
+                    "每剩余一次弃牌获得{C:money}$#1#{}",
+                    "剩余的 {C:blue}出牌{} 不在获得钱",
+                    "回合结束后不在获得{C:attention}利息{} "
                 }
             },
             sleeve_sdm_hoarder_alt = {
-                name = "Hoarder Sleeve",
+                name = "囤积者牌套中套",
                 text = {
-                    "At end of each Round:",
-                    "{C:money}$#1#{} per remaining {C:red}Discard",
-                    "{s:0.8}Earn no {s:0.8,C:attention}Interest{s:0.8} at end of round"
+                    "每回合结束后:",
+                    "每剩余一次弃牌获得{C:money}$#1#{}",
+                    "回合结束后不在获得{C:attention}利息{} "
                 }
             }
         },
     },
     misc = {
         dictionary = {
-            k_halved_ex = "Halved!",
-            k_shared_ex = "Shared!",
+            k_halved_ex = "减半!",
+            k_shared_ex = "共享!",
         },
         v_dictionary = {
-            a_hand = "+#1# Hand",
-            a_hand_minus = "-#1# Hand",
-            a_discard = "+#1# Discard",
-            a_discard_minus = "-#1# Discard",
-            a_joker_slot = "+#1# Joker Slot",
-            a_joker_slot_minus = "-#1# Joker Slot",
-            a_consumable_slot = "+#1# Cons. Slot",
-            a_consumable_slot_minus = "-#1# Cons. Slot",
+            a_hand = "+#1# 出牌次数",
+            a_hand_minus = "-#1# 出牌次数",
+            a_discard = "+#1# 弃牌次数",
+            a_discard_minus = "-#1# 弃牌次数",
+            a_joker_slot = "+#1# 小丑槽",
+            a_joker_slot_minus = "-#1# 小丑槽",
+            a_consumable_slot = "+#1# 消耗槽位",
+            a_consumable_slot_minus = "-#1# 消耗槽位",
         },
         v_text = {
             ch_c_no_shop_planets = {
-                "{C:planet}Planets{} no longer appear in the {C:attention}shop"
+                "{C:planet}星球牌{} 不在出现在 {C:attention}商店中"
             }
         },
     },
