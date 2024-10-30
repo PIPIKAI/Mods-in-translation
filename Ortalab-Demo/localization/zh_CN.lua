@@ -810,7 +810,7 @@ return {
 				["name"] = "The Rooster",
 				["text"] = {
 					"Creates a copy of a",
-                    "{C:loteria}Loteria{} or {C:Zodiac}Zodiac{} card",
+                    "{C:loteria}Loteria{} or {C:Zodiac}星座牌{}",
                     "used during this run",
                     "{s:0.8,C:inactive}The Rooster excluded"
 				},
@@ -907,7 +907,7 @@ return {
 				["name"] = "The Scorpion",
 				["text"] = {
 					"Create up to {C:attention}#1#",
-                    "random {C:Zodiac}Zodiac{} cards",
+                    "random {C:Zodiac}星座牌{}",
                     "{S:0.8,C:inactive}(Must have room)",
 				},
 			},
@@ -929,75 +929,75 @@ return {
         },
 		["Zodiac"] = {
 			["c_ortalab_zod_aries"] = {
-				["name"] = "Aries",
+				["name"] = "白羊座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_taurus"] = {
-				["name"] = "Taurus",
+				["name"] = "金牛座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_gemini"] = {
-				["name"] = "Gemini",
+				["name"] = "双子座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_cancer"] = {
-				["name"] = "Cancer",
+				["name"] = "巨蟹座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_leo"] = {
-				["name"] = "Leo",
+				["name"] = "狮子座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_virgo"] = {
-				["name"] = "Virgo",
+				["name"] = "处女座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_libra"] = {
-				["name"] = "Libra",
+				["name"] = "天秤座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_scorpio"] = {
-				["name"] = "Scorpio",
+				["name"] = "天蝎座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_sag"] = {
-				["name"] = "Sagittarius",
+				["name"] = "射手座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_capr"] = {
-				["name"] = "Capricorn",
+				["name"] = "摩羯座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_aquarius"] = {
-				["name"] = "Aquarius",
+				["name"] = "水瓶座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 			["c_ortalab_zod_pisces"] = {
-				["name"] = "Pisces",
+				["name"] = "双鱼座",
 				["text"] = {
-					"{C:inactive}No effect",
+					"{C:inactive}没有效果",
 				},
 			},
 		},
