@@ -42,7 +42,7 @@ return {
 			ortalab_cured = 'Cured!',
         },
 		['labels'] = {
-			ortalab_greyscale = '灰色',
+			ortalab_greyscale = '灰阶',
 			ortalab_fluorescent = '荧光',
 			ortalab_overexposed = '高曝',
 			ortalab_anaglyphic = '象形图',
@@ -582,7 +582,7 @@ return {
 				["name"] = "生锈小丑",
 				["text"] = {
 					"Gives {X:mult,C:white}#2#X{} Mult for",
-					"each {C:attention}Rusty Card{}",
+					"each {C:attention}锈蚀牌{}",
 					"in your {C:attention}full deck",
 					"{C:inactive,s:0.9}(当前 {C:white,X:mult,s:0.9}#1#X{C:inactive,s:0.9})"
 				}
@@ -598,10 +598,10 @@ return {
 			['j_ortalab_sandstone'] = {
 				["name"] = "砂岩小丑",
 				["text"] = {
-					"Played {C:attention}Sand Cards{}",
+					"Played {C:attention}砂岩牌{}",
 					"do not lose Mult",
 					"Gains {X:mult,C:white}#2#X{} Mult when",
-					"a {C:attention}Sand Card{} is played",
+					"a {C:attention}砂岩牌{} is played",
 					"{C:inactive,s:0.9}(当前 {C:white,X:mult,s:0.9}#1#X{C:inactive,s:0.9})"
 				}
 			},
@@ -755,7 +755,7 @@ return {
 				["text"] = {
 					"增强 {C:attention}#1#{}张随机的牌",
                     "变为",
-                    "{C:attention}Bent Cards",
+                    "{C:attention}弯曲牌s",
 				},
 			},
 			["c_ortalab_lot_melon"] = {
@@ -763,7 +763,7 @@ return {
 				["text"] = {
 					"增强 {C:attention}#1#{}张随机的牌",
                     "变为",
-                    "{C:attention}Recycled Cards",
+                    "{C:attention}再生牌s",
 				},
 			},
 			["c_ortalab_lot_mandolin"] = {
@@ -795,7 +795,7 @@ return {
 				["text"] = {
 					"Enhances {C:attention}#1#{} random",
                     "cards into",
-                    "{C:attention}Rusty Cards",
+                    "{C:attention}锈蚀牌s",
 				},
 			},
 			["c_ortalab_lot_bird"] = {
@@ -803,7 +803,7 @@ return {
 				["text"] = {
 					"Enhances {C:attention}#1#{} random",
                     "cards into",
-                    "{C:attention}Sand Cards",
+                    "{C:attention}砂岩牌",
 				},
 			},
             ["c_ortalab_lot_rooster"] = {
@@ -885,7 +885,7 @@ return {
 				["text"] = {
 					"Enhances {C:attention}#1#{} random",
                     "cards into",
-                    "{C:attention}Ore Cards",
+                    "{C:attention}矿石牌",
 				},
 			},
             ["c_ortalab_lot_bottle"] = {
@@ -1003,93 +1003,92 @@ return {
 		},
 		["Enhanced"] = {
 			["m_ortalab_sand"] = {
-				["name"] = "Sand Card",
+				["name"] = "砂岩牌",
 				["text"] = {
-					"{X:mult,C:white}X#1#{} Mult,",
-                    "loses {X:mult,C:white}X#2#{} Mult", 
-					"when played",
-                    "{C:inactive,s:0.7}(Destroyed when played at {X:mult,C:white,s:0.7}X1{C:inactive,s:0.7} Mult)",
+					"{X:mult,C:white}X#1#{} 倍率,",
+					"打出时",
+                    "失去 {X:mult,C:white}X#2#{} 倍率", 
+                    "{C:inactive,s:0.7}(当 {X:mult,C:white,s:0.7}X1{C:inactive,s:0.7} 倍率时自毁)",
 				},
 			},
 			["m_ortalab_rusty"] = {
-				["name"] = "Rusty Card",
+				["name"] = "锈蚀牌",
 				["text"] = {
-					"{X:mult,C:white}X#1#{} Mult",
-					"Gains {X:mult,C:white}X#2#{} Mult per",
-					"{C:attention}Rusty Card{} held in hand"
+					"{X:mult,C:white}X#1#{} 倍率",
+					"手牌每有一张{C:attention}锈蚀牌{}",
+					" 增加 {X:mult,C:white}X#2#{} 倍率",
 				},
 			},
 			["m_ortalab_recycled"] = {
-				["name"] = "Recycled Card",
+				["name"] = "再生牌",
 				["text"] = {
-					"{C:green}#1# in #2#{} chance",
-					"for {C:red}+#3# Discard",
-					"{C:green}#1# in #4#{} chance",
-					"for {C:blue}+#5# Hand",
+					"{C:green}#1# / #2#{} 几率",
+					" {C:red}+#3# 弃牌",
+					"{C:green}#1# / #4#{} 几率",
+					" {C:blue}+#5# 出牌",
 				},
 			},
 			["m_ortalab_bent"] = {
-				["name"] = "Bent Card",
+				["name"] = "弯曲牌",
 				["text"] = {
-					"{C:mult}+#1#{} Mult for every",
-					"{C:attention}card{} held in hand"
+					"每张{C:attention}手牌{} ",
+					"{C:chips}+#1#{} 倍率",
 				}
 			},
 			["m_ortalab_post"] = {
-				["name"] = "Post Card",
+				["name"] = "名额牌",
 				["text"] = {
-					"{C:chips}+#1#{} chips for every",
-					"{C:attention}card{} held in hand"
+					"每张{C:attention}手牌{} ",
+					"{C:chips}+#1#{} 筹码",
 				}
 			},
 			["m_ortalab_index"] = {
-				["name"] = "Index Card",
+				["name"] = "索引牌",
 				["text"] = {
-					"Can act as {C:attention}rank",
-					"above or below"
+					" {C:attention}点数",
+					"可以变高或变低"
 				}
 			},
 			["m_ortalab_ore"] = {
-				["name"] = "Ore Card",
+				["name"] = "矿石牌",
 				["text"] = {
-					"{C:mult}+#1#{} Mult",
-					"no rank or suit"
+					"{C:mult}+#1#{} 倍率",
+					"没有等级和花色"
 				}
 			},
 			["m_ortalab_iou"] = {
-				["name"] = "IOU Card",
+				["name"] = "白条牌",
 				["text"] = {
-					"{C:attention}Temporarily{} increase",
-					"hand level by {C:attention}#1#"
+					"{C:attention}零时{} 增加",
+					"手牌等级 {C:attention}#1#"
 				}
 			},
 		},
 		["Edition"] = {
 			['e_ortalab_overexposed'] = {
-				name = "Overexposed",
+				name = "高曝",
 				text = {
-					"{C:green}Retrigger{} this card"
+					"{C:green}重新触发{} 这张牌"
 				}
 			},
 			['e_ortalab_greyscale'] = {
-				name = "Greyscale",
+				name = "灰阶",
 				text = {
-					"Swap {C:chips}Chips",
-					"and {C:mult}Mult"
+					"交换 {C:chips}筹码",
+					"和 {C:mult}倍率"
 				}
 			},
 			['e_ortalab_fluorescent'] = {
-				name = "Fluorescent",
+				name = "荧光",
 				text = {
-					"Earn {C:money}$#1#{} when this",
-					"card is scored"
+					"计分时赚 {C:money}$#1#{} ",
 				}
 			},
 			['e_ortalab_anaglyphic'] = {
-				name = "Anaglyphic",
+				name = "象形图",
 				text = {
-					"{C:chips}+#1#{} Chips",
-					"{C:red}+#2#{} Mult"
+					"{C:chips}+#1#{}筹码",
+					"{C:red}+#2#{} 倍率"
 				}
 			},
 		},
