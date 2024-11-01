@@ -1,0 +1,28 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''UIBox_button({button = 'your_collection_tags', label = {localize('b_tags')}, count = G.DISCOVER_TALLIES.tags, minw = 5, id = 'your_collection_tags'}),'''
+position = "before"
+payload = '''
+ UIBox_button({button = 'your_collection_souls', label = {localize('b_soul')}, count = {tally = #souls, of = #souls}, minw = 5, id = 'your_collection_souls'}),
+'''
+match_indent = false
+
+
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = '''if (G.SETTINGS.tutorial_complete or G.GAME.pseudorandom.seed ~= 'TUTORIAL' or G.GAME.round_resets.ante > 1) and'''
+position = "before"
+payload = '''
+       if (G.SETTINGS.tutorial_complete or G.GAME.pseudorandom.seed ~= 'TUTORIAL' or G.GAME.round_resets.ante > 1) and self.area and self.area.config.type == 'joker' and find_soul(self,"enhance_soul_eternal") then
+          return true
+       end
+'''
+match_indent = false
+
