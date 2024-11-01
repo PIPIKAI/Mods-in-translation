@@ -3,18 +3,18 @@ return {
 		["dictionary"] = {
 			['ortalab_config_artists'] = 'Artist Credits',
 			['ortalab_config_artists_desc'] = {
-				"Toggle the display of artist credit tooltips"
+				"显示画图作者信息"
 			},
-			['ortalab_config_full'] = 'Full Credits',
+			['ortalab_config_full'] = '显示画图作者信息',
 			['ortalab_config_full_desc'] = {
-				"Toggle the display of additional tooltips",
-				"such as editions and seals"
+				"展示额外提示（建议打勾）",
+				"例如 版本和封蜡 "
 			},
 			['ortalab_config_placeholder'] = 'Toggle Demo Objects',
 			['ortalab_config_placeholder_desc'] = {
-				"Toggle the display of locked demo",
-				"objects in the collection",
-				"Requires restart"
+				"在收藏中",
+				"显示未作好的东西(不用打勾)",
+				"重启生效"
 			},
 			["ortalab_artist"] = 'Artist',
 			["ortalab_swap"] = 'Swap!',
@@ -25,9 +25,9 @@ return {
 			['ortalab_explode'] = '爆炸!',
 			['ortalab_infected'] = 'Infected!',
 			['ortalab_destroyed'] = 'Destroyed!',
-			['ortalab_loteria_pack'] = 'Chalupa Pack',
-			['ortalab_loteria_pack_2'] = 'Wumbo Chalupa Pack',
-			['ortalab_loteria_pack_3'] = 'Giga Chalupa Pack',
+			['ortalab_loteria_pack'] = '查鲁巴补充包',
+			['ortalab_loteria_pack_2'] = 'Wumbo 查鲁巴补充包',
+			['ortalab_loteria_pack_3'] = 'Giga 查鲁巴补充包',
 			['ortalab_moldy_discard'] = 'Discard!',
 			['ortalab_moldy_hand'] = 'Hand!',
 			['ortalab_no_tag'] = 'None',
@@ -38,14 +38,14 @@ return {
 			['ortalab_hammer'] = 'Stripped!',
 			['ortalab_corroded'] = 'Corroded!',
 			['ortalab_loteria_saved'] = 'Saved!',
-			ortalab_protostar = 'Collapsed!',
+			ortalab_protostar = '倒塌!',
 			ortalab_cured = 'Cured!',
         },
 		['labels'] = {
 			ortalab_greyscale = '灰阶',
 			ortalab_fluorescent = '荧光',
 			ortalab_overexposed = '高曝',
-			ortalab_anaglyphic = '象形图',
+			ortalab_anaglyphic = '重影',
 			ortalab_corroded_seal = '锈蚀',
 			ortalab_possessed_seal = '附身',
 			ortalab_restrained_seal = '约束',
@@ -581,9 +581,8 @@ return {
 			['j_ortalab_rusty'] = {
 				["name"] = "生锈小丑",
 				["text"] = {
-					"Gives {X:mult,C:white}#2#X{} Mult for",
-					"each {C:attention}锈蚀牌{}",
-					"in your {C:attention}full deck",
+					"每有一张 {C:attention}锈蚀牌{}在你的牌组中",
+					"提供 {X:mult,C:white}#2#X{} 倍率 ",
 					"{C:inactive,s:0.9}(当前 {C:white,X:mult,s:0.9}#1#X{C:inactive,s:0.9})"
 				}
 			},
@@ -598,10 +597,8 @@ return {
 			['j_ortalab_sandstone'] = {
 				["name"] = "砂岩小丑",
 				["text"] = {
-					"Played {C:attention}砂岩牌{}",
-					"do not lose Mult",
-					"Gains {X:mult,C:white}#2#X{} Mult when",
-					"a {C:attention}砂岩牌{} is played",
+					"打出 {C:attention}砂岩牌{}不再失去倍率",
+					"打出 {C:attention}砂岩牌{} 获得 {X:mult,C:white}#2#X{} 倍率",
 					"{C:inactive,s:0.9}(当前 {C:white,X:mult,s:0.9}#1#X{C:inactive,s:0.9})"
 				}
 			},
@@ -681,10 +678,9 @@ return {
 			['j_ortalab_shinku'] = {
 				["name"] = "新庫",
 				["text"] = {
-					"Create #1# random {C:Ortalab}Ortalab",
-					"{C:attention}Jokers{} that last for", 
-					"{C:attention}one round{} when {C:attention}Blind",
-					"is selected"
+					"选择盲注之后",
+					"创建 #1# 个随机的 ",
+					"{C:Ortalab}Ortalab{C:attention}小丑牌{}", 
 				}
 			},
 			['j_ortalab_solo'] = {
@@ -697,9 +693,9 @@ return {
 			['j_ortalab_sunnyside'] = {
 				["name"] = "阳光普照",
 				["text"] = {
-					"Adds {C:money}$#1#{} of {C:attention}sell value",
-					"to leftmost {C:attention}Consumable{}",
-					"when {C:attention}Blind{} is selected"
+					"最左边的{C:attention}消耗牌{}",
+					"选择 {C:attention}盲注{} 后",
+					"售价增加 {C:money}$#1#{} ",
 				}
 			},
 			['j_ortalab_spectrum'] = {
@@ -785,9 +781,8 @@ return {
             ["c_ortalab_lot_tree"] = {
 				["name"] = "树",
 				["text"] = {
-					"Turn {C:attention}#1#{} selected",
-                    "cards into a suit",
-					"other than {V:1}#2#"
+					"将 {C:attention}#1#{}张选择的牌变为",
+					"非 {V:1}#2#花色"
 				},
 			},
             ["c_ortalab_lot_siren"] = {
@@ -809,27 +804,25 @@ return {
             ["c_ortalab_lot_rooster"] = {
 				["name"] = "公鸡",
 				["text"] = {
-					"Creates a copy of a",
+					"随机复制一张这回合使用过的",
                     "{C:loteria}乐透牌{} 或 {C:Zodiac}星座牌{}",
-                    "used during this run",
                     "{s:0.8,C:inactive}排除自己这张牌"
 				},
 			},
             ["c_ortalab_lot_pear"] = {
 				["name"] = "梨",
 				["text"] = {
-					"{C:green}#1# in #2#{} chance to add",
-                    "{C:dark_edition}Anaglyphic{}, {C:dark_edition}Fluorescent{} or",
-                    "{C:dark_edition}Greyscale{} edition to",
-                    "a random {C:attention}Joker"
+					"{C:green}#1# / #2#{} 几率添加",
+                    "{C:dark_edition}重影{}, {C:dark_edition}荧光{} 或",
+                    "{C:dark_edition}灰阶{} 版本到一张",
+                    "随机的 {C:attention}小丑牌"
 				},
 			},
             ["c_ortalab_lot_parrot"] = {
 				["name"] = "鹦鹉",
 				["text"] = {
-					"Turn {C:attention}#1#{} selected",
-                    "cards into a suit",
-					"other than {V:1}#2#"
+					"将 {C:attention}#1#{}张选择的牌变为",
+					"非 {V:1}#2#花色"
 				},
 			},
             ["c_ortalab_lot_ladder"] = {
@@ -843,40 +836,37 @@ return {
             ["c_ortalab_lot_heron"] = {
 				["name"] = "鹭",
 				["text"] = {
-					"Earn {C:money}$#1#{} for every",
-					"{C:chips}#2# Chip value{} of",
-					"{C:attention}#3#{} random cards in hand"
+					"手牌中随机选择{C:attention}#3#{}张牌",
+					"每有一个+{C:chips}#2# 筹码{}的牌",
+					"获得 {C:money}$#1#{} ",
 				},
 			},
             ["c_ortalab_lot_heart"] = {
 				["name"] = "心",
 				["text"] = {
-					"Turn {C:attention}#1#{} selected",
-                    "cards into a suit",
-					"other than {V:1}#2#"
+					"将 {C:attention}#1#{}张选择的牌变为",
+					"非 {V:1}#2#花色"
 				},
 			},
             ["c_ortalab_lot_harp"] = {
 				["name"] = "竖琴",
 				["text"] = {
-					"Combine {C:attention}2{} selected",
-					"cards into {C:attention}1"
+					"将两张牌",
+					"合二为一"
 				},
 			},
             ["c_ortalab_lot_hand"] = {
 				["name"] = "手",
 				["text"] = {
-					"Turn {C:attention}#1#{} selected",
-					"{C:attention}Joker{} into a random",
-					"{C:attention}Joker{} of the same rarity"
+					"将 {C:attention}#1#{}张选择的{C:attention}小丑{}变为",
+					"同样稀有度的{C:attention}随机小丑{}",
 				},
 			},
             ["c_ortalab_lot_flag"] = {
 				["name"] = "旗",
 				["text"] = {
-					"Increases or decreases",
-					"rank of up to {C:attention}#1#{}",
 					"selected cards by",
+					"增加或减少{C:attention}#1#{}等级",
 					"up to {C:attention}#2#"
 				},
 			},
@@ -884,7 +874,7 @@ return {
 				["name"] = "花花公子",
 				["text"] = {
 					"增强 {C:attention}#1#{}张随机的牌",
-                     "变为",
+                    "变为",
                     "{C:attention}矿石牌",
 				},
 			},
@@ -920,9 +910,8 @@ return {
 			["c_ortalab_lot_boot"] = {
 				["name"] = "靴子",
 				["text"] = {
-					"Turn {C:attention}#1#{} selected",
-                    "cards into a suit",
-					"other than {V:1}#2#"
+					"将 {C:attention}#1#{}张选择的牌变为",
+					"非 {V:1}#2#花色"
 				},
 			},
         },
@@ -1084,7 +1073,7 @@ return {
 				}
 			},
 			['e_ortalab_anaglyphic'] = {
-				name = "象形图",
+				name = "重影",
 				text = {
 					"{C:chips}+#1#{}筹码",
 					"{C:red}+#2#{} 倍率"
@@ -1100,140 +1089,132 @@ return {
 				},
 			},
 			["tag_ortalab_slipup"] = {
-				["name"] = "Slip-Up Patch",
+				["name"] = "滑倒补丁",
 				["text"] = {
 					"下回合{C:red}+#1#{} 弃牌",
 				},
 			},
 			["tag_ortalab_slayer"] = {
-				["name"] = "Slayer Patch",
+				["name"] = "杀手补丁",
 				["text"] = {
-					"{C:money}$#1#{} per defeated",
-					"Blind this run",
-					"{C:inactive}(Will give {C:money}$#2#{C:inactive})"
+					"每击败一个盲注",
+					"获得{C:money}$#1#{}",
+					"{C:inactive}(当前会获得 {C:money}$#2#{C:inactive})"
 				},
 			},
 			["tag_ortalab_dandy"] = {
-				["name"] = "Dandy Patch",
+				["name"] = "丹迪补丁",
 				["text"] = {
 					"{C:money}$#1#{} for each",
 					"unused {C:blue}Hand{} this run",
-					"{C:inactive}(Will give {C:money}$#2#{C:inactive})"
+					"{C:inactive}(当前会获得 {C:money}$#2#{C:inactive})"
 				},
 			},
 			["tag_ortalab_soul"] = {
 				["name"] = "Soul Patch",
 				["text"] = {
-					"Shop has a free",
-					"{C:purple,E:1}Legendary{} Joker"
+					"商店有一个免费的",
+					"{C:purple,E:1}传奇小丑{} "
 				},
 			},
 			['tag_ortalab_overexposed'] = {
-                name = "Overexposed Patch",
+                name = "高曝补丁",
                 text = {
-                    "Next base edition shop",
-                    "{C:attention}Joker{} is free and",
+                    "下一个在商店中的{C:attention}小丑{}是免费并且带有",
                     "becomes {C:dark_edition}Overexposed"
                 }
             },
 			['tag_ortalab_anaglyphic'] = {
-                name = "Anaglyphic Patch",
+                name = "重影补丁",
                 text = {
-                    "Next base edition shop",
-                    "{C:attention}Joker{} is free and",
-                    "becomes {C:dark_edition}Anaglyphic"
+                    "下一个在商店中的{C:attention}小丑{}是免费并且带有",
+                    " {C:dark_edition}重影"
                 }
             },
 			['tag_ortalab_fluorescent'] = {
-                name = "Fluorescent Patch",
+                name = "荧光补丁",
                 text = {
-                    "Next base edition shop",
-                    "{C:attention}Joker{} is free and",
-                    "becomes {C:dark_edition}Fluorescent"
+                    "下一个在商店中的{C:attention}小丑{}是免费并且带有",
+                    " {C:dark_edition}荧光"
                 }
             },
 			['tag_ortalab_greyscale'] = {
-                name = "Greyscale Patch",
+                name = "灰阶补丁",
                 text = {
-                    "Next base edition shop",
-                    "{C:attention}Joker{} is free and",
-                    "becomes {C:dark_edition}Greyscale"
+                    "下一个在商店中的{C:attention}小丑{}是免费并且带有",
+                    " {C:dark_edition}灰阶"
                 }
             },
 			['tag_ortalab_minion'] = {
-                name = "Minion Patch",
+                name = "奴才补丁",
                 text = {
-                    "{C:attention}Halve{} the required",
-                    "Chips of the next",
-                    "Small or Big Blind"
+                    "下回合的大盲注或小盲注",
+                    "筹码要求{C:attention}减半{} ",
                 }
             },
 			['tag_ortalab_rewind'] = {
-                name = "Rewind Patch",
+                name = "倒退补丁",
                 text = {
-					"Add a copy of the", 
-					"last selected {C:attention}Tag{}",
-                    "{C:inactive,s:0.8}Currently #1#"
+					"复制上一个选择的{C:attention}标签{}",
+                    "{C:inactive,s:0.8}当前复制的是 #1#"
                 }
             },
 			['tag_ortalab_loteria'] = {
-                name = "Strange Patch",
+                name = "奇怪补丁",
                 text = {
-					"Add {C:attention}#1#{} free {C:loteria}Giga", 
-					"{C:loteria}Chalupa Packs{}",
-					"to the next shop"
+					"添加 {C:attention}#1#{}个 免费的 {C:loteria}补充包", 
+					"在下个商店",
                 }
             },
 		},
 		["Back"] = {
 			['b_ortalab_orange'] = {
-				["name"] = "Orange Deck",
+				["name"] = "橘色牌组",
 				["text"] = {
-					"{C:red}+#2#{} discards",
-					"{C:blue}#1#{} hand",
+					"{C:red}+#2#{} 弃牌",
+					"{C:blue}#1#{} 出牌",
 				}
 			},
 			['b_ortalab_cyan'] = {
-				["name"] = "Cyan Deck",
+				["name"] = "青色牌组",
 				["text"] = {
-					"{C:blue}+#1#{} hands",
-					"{C:red}#2#{} discard",
+					"{C:blue}+#1#{} 出牌",
+					"{C:red}#2#{} 弃牌",
 				}
 			},
 			['b_ortalab_cobalt'] = {
-				["name"] = "Cobalt Deck",
+				["name"] = "钴蓝牌组",
 				["text"] = {
-					"Go up to {C:red}-$#1#",
-					"in debt"
+					"可以欠 {C:red}-$#1#",
 				}
 			},
 			['b_ortalab_brown'] = {
-				["name"] = "Brown Deck",
+				["name"] = "棕色牌组",
 				["text"] = {
 					"{C:blue}Hands{} no longer earn money",
 					"Earn double {C:attention}Interest"
 				}
 			},
 			['b_ortalab_experimental'] = {
-				["name"] = "Experimental Deck",
+				["name"] = "实验牌组",
 				["text"] = {
-					"{C:blue}+#1#{} hand size",
-					"Start with a copy of",
-					"{T:c_ortalab_lot_barrel,C:loteria}The Barrel",
+					"{T:c_ortalab_lot_barrel,C:loteria}桶开始",
+					"以一张",
+					"{C:blue}+#1#{} 手牌数量",
 				}
 			},
 			['b_ortalab_royal'] = {
-				["name"] = "Royal Deck",
+				["name"] = "皇家牌组",
 				["text"] = {
-					"Start with only", 
-					"{C:attention}Face Cards{} in your deck",
-					"{s:0.9}At the end of each",
-					"{s:0.9}round, add a {C:attention,s:0.9}random",
-					"{s:0.9,C:attention}Face Card{s:0.9} to your deck"
+					"开始时只有", 
+					"{C:attention}人头牌{} 在牌组中",
+					"{s:0.9}每回合结束后",
+					"{s:0.9}添加一张 {C:attention,s:0.9}随机的",
+					"{s:0.9,C:attention}人头牌{s:0.9} 到你的牌组"
 				}
 			},
 			['b_ortalab_striped'] = {
-				["name"] = "Striped Deck",
+				["name"] = "条纹牌组",
 				["text"] = {
 					"All cards of a rank start",
 					"as the same {C:attention}suit{}",
@@ -1242,120 +1223,113 @@ return {
 				}
 			},
 			['b_ortalab_sketched'] = {
-				["name"] = "Sketched Deck",
+				["name"] = "草图牌组",
 				["text"] = {
-					"{C:red}#1#{} Hand Size",
-					"{C:attention}+#2#{} Joker Slot",
+					"{C:red}#1#{} 手牌数目",
+					"{C:attention}+#2#{} 小丑槽位",
 				}
 			},
 			['b_ortalab_hoarder'] = {
-				["name"] = "Hoarder Deck",
+				["name"] = "囤积牌组",
 				["text"] = {
-					"After defeating each",
-                    "{C:attention}Boss Blind{}, gain {C:attention}#1#",
-                    "random tags"
+					"击败{C:attention}Boss 盲注{}",
+                    "获得 {C:attention}#1#个随机的标签",
 				}
 			},
 			['b_ortalab_frozen'] = {
-				["name"] = "Frozen Deck",
+				["name"] = "冰冻牌组",
 				["text"] = {
-					"Blind rewards are {C:attention}doubled",
-					"if beaten in {C:attention}1{} {C:blue}Hand"
+					"如果一次出牌击败盲注",
+					"盲注需求变为{C:attention}双倍{}",
 				}
 			}
 		},
 		['Voucher'] = {
 			['v_ortalab_cantor'] = {
-				["name"] = "Cantor Loteria",
+				["name"] = "坎托乐透",
 				["text"] = {
-					"You can select", 
-					"{C:attention}#1#{} extra card",
-					"from {C:loteria}Chalupa Packs"
+					"从{C:loteria}查鲁巴补充包{}中",
+					"有额外{C:attention}#1#{} 个选择",
 				}
 			},
 			['v_ortalab_tabla'] = {
-				["name"] = "Tabla Loteria",
+				["name"] = "塔布拉乐透",
 				["text"] = {
-					"{C:loteria}乐透牌{} affect", 
-					"{C:attention}#1#{} extra card"
+					"{C:loteria}乐透牌{} 效果影响额外", 
+					"{C:attention}#1#{} 张牌"
 				}
 			},
 			['v_ortalab_window_shopping'] = {
-				["name"] = "Window Shopping",
+				["name"] = "购物橱窗",
 				["text"] = {
-					"{C:attention}+#1#{} free {C:green}reroll{}",
-					"per shop", 
-					"{C:green}Reroll{} price {C:red}+$#2#{}",
+					"每次商店{C:attention}+#1#{}次 免费 {C:green}重掷{}",
+					"{C:green}重掷{} 价格 {C:red}+$#2#{}",
 				}
 			},
 			['v_ortalab_infinite_scroll'] = {
-				["name"] = "Infinite Scroll",
+				["name"] = "无限重掷",
 				["text"] = {
-					"{C:attention}+#1#{} free {C:green}reroll{}",
-					"per shop", 
-					"{C:green}Reroll{} price {C:red}+$#2#{}",
+					"每次商店{C:attention}+#1#{}次 免费 {C:green}重掷{}",
+					"{C:green}重掷{} 价格 {C:red}+$#2#{}",
 				}
 			},
 			['v_ortalab_abacus'] = {
-				["name"] = "Abacus",
+				["name"] = "算盘",
 				["text"] = {
-					"{C:attention}+#1#{} Ante",
-					"Gain {C:money}$#2#", 
+					"{C:attention}+#1#{} 底注",
+					"获得 {C:money}$#2#", 
 				}
 			},
 			['v_ortalab_calculator'] = {
-				["name"] = "Calculator",
+				["name"] = "计算器",
 				["text"] = {
-					"{C:attention}+#1#{} Ante",
-					"{C:attention}+#1#{} Joker slot", 
+					"{C:attention}+#1#{} 底注",
+					"{C:attention}+#1#{} 小丑槽", 
 				}
 			},
 			['v_ortalab_catalog'] = {
-				["name"] = "Catalog",
+				["name"] = "目录",
 				["text"] = {
-					"{C:attention}+#1#{} Booster Pack",
-					"in shop", 
+					"{C:attention}+#1#{}个商店中的补充包",
 				}
 			},
 			['v_ortalab_ad_campaign'] = {
-				["name"] = "Ad Campaign",
+				["name"] = "广告宣传",
 				["text"] = {
-					"{C:attention}+#1#{} Voucher",
-					"in shop", 
+					"{C:attention}+#1#{}个商店中的优惠券",
 				}
 			},
 			['v_ortalab_shady_trading'] = {
-				["name"] = "Shady Trading",
+				["name"] = "黑幕交易",
 				["text"] = {
-					"{C:spectral}Spectral{} cards can",
-					"appear in the shop",
+					"{C:spectral}幻灵牌{} 可以出现在商店中",
 				}
 			},
 			['v_ortalab_illegal_imports'] = {
-				["name"] = "Illegal Imports",
+				["name"] = "非法进口",
 				["text"] = {
-					"{C:spectral}Spectral{} cards appear",
-					"{C:attention}#1#x{} more frequently in the shop",
+					"{C:spectral}幻灵牌{} 可以出现在商店中",
+					"{C:attention}#1#x{} 更频繁地在店里",
 				}
 			},
 			['v_ortalab_home_delivery'] = {
-				["name"] = "Home Delivery",
+				["name"] = "送货上门",
 				["text"] = {
-					"Skipping {C:attention}Blinds{} no",
-					"longer skips {C:attention}Shops"
+					"跳过 {C:attention}盲注{} 不再",
+					"跳过 {C:attention}商店"
 				}
 			},
 			['v_ortalab_hoarding'] = {
-				["name"] = "Hoarding",
+				["name"] = "囤积",
 				["text"] = {
-					"{C:attention}Doubles Tag{} rewards",
-					"from skipping {C:attention}Blinds"
+					"跳过 {C:attention}盲注{} 获得",
+					"{C:attention}两倍标签{}",
 				}
 			},
 		},
 		['Other'] = {
 			['ortalab_corroded_seal'] = {
-                name = "Corroded",
+                name = "腐蚀封蜡",
                 text = {
                     "{C:red}-$#1#{} when {C:blue}played",
                     "If {C:attention}discarded{}, increase cost",
@@ -1364,67 +1338,67 @@ return {
                 }
             },
 			['p_ortalab_small_loteria_1'] = {
-                name = "Chalupa Pack",
+                name = "查鲁巴补充包",
                 text = {
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:loteria} Loteria{} cards to",
-                    "be used immediately"
+                    "从{C:attention}#1#{} 张中选择",
+                    "{C:attention}#2#张{C:loteria} 乐透牌{} ",
+                    "即选即用"
                 }
             },
 			['p_ortalab_small_loteria_2'] = {
-                name = "Chalupa Pack",
+                name = "查鲁巴补充包",
                 text = {
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:loteria} Loteria{} cards to",
-                    "be used immediately"
+                    "从{C:attention}#1#{} 张中选择",
+                    "{C:attention}#2#张{C:loteria} 乐透牌{} ",
+                    "即选即用"
                 }
             },
 			['p_ortalab_small_loteria_3'] = {
-                name = "Chalupa Pack",
+                name = "查鲁巴补充包",
                 text = {
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:loteria} Loteria{} cards to",
-                    "be used immediately"
+                    "从{C:attention}#1#{} 张中选择",
+                    "{C:attention}#2#张{C:loteria} 乐透牌{} ",
+                    "即选即用"
                 }
             },
 			['p_ortalab_small_loteria_4'] = {
-                name = "Chalupa Pack",
+                name = "查鲁巴补充包",
                 text = {
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:loteria} Loteria{} cards to",
-                    "be used immediately"
+                    "从{C:attention}#1#{} 张中选择",
+                    "{C:attention}#2#张{C:loteria} 乐透牌{} ",
+                    "即选即用"
                 }
             },
 			['p_ortalab_mid_loteria_1'] = {
-                name = "Wumbo Chalupa Pack",
+                name = "查鲁巴补充包",
                 text = {
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:loteria} Loteria{} cards to",
-                    "be used immediately"
+                    "从{C:attention}#1#{} 张中选择",
+                    "{C:attention}#2#张{C:loteria} 乐透牌{} ",
+                    "即选即用"
                 }
             },
 			['p_ortalab_mid_loteria_2'] = {
-                name = "Wumbo Chalupa Pack",
+                name = "查鲁巴补充包",
                 text = {
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:loteria} Loteria{} cards to",
-                    "be used immediately"
+                    "从{C:attention}#1#{} 张中选择",
+                    "{C:attention}#2#张{C:loteria} 乐透牌{} ",
+                    "即选即用"
                 }
             },
 			['p_ortalab_big_loteria_1'] = {
-                name = "Giga Chalupa Pack",
+                name = "Giga 补充包",
                 text = {
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:loteria} Loteria{} cards to",
-                    "be used immediately"
+                    "从{C:attention}#1#{} 张中选择",
+                    "{C:attention}#2#张{C:loteria} 乐透牌{} ",
+                    "即选即用"
                 }
             },
 			['p_ortalab_big_loteria_2'] = {
-                name = "Giga Chalupa Pack",
+                name = "Giga 查鲁巴补充包",
                 text = {
-                    "Choose {C:attention}#1#{} of up to",
-                    "{C:attention}#2#{C:loteria} Loteria{} cards to",
-                    "be used immediately"
+                    "从{C:attention}#1#{} 张中选择",
+                    "{C:attention}#2#张{C:loteria} 乐透牌{} ",
+                    "即选即用"
                 }
             },
 			['ortalab_1_sticker'] = {
@@ -1446,60 +1420,56 @@ return {
 		},
 		['Stake'] = {
 			['stake_ortalab_1'] = {
-				name = "Ortalab Stake",
+				name = "Ortalab 注",
 				text = {
-				"Play with only",
-				"{C:Ortalab}Ortalab{} content"
+				"只游玩",
+				"{C:Ortalab}Ortalab{} 里面的内容"
 				}
 			},
 			['stake_ortalab_2'] = {
-				["name"] = 'Ortalab Stake II',
+				["name"] = 'Ortalab 二注',
 				["text"] = {
-					"Required score scales",
-                    "faster for each {C:attention}Ante",
-                    "{s:0.8}Applies Ruby Stake"
+					"每个底注分数增长",
+                    "更快",
 				}
 			}
 		},
 		['Blind'] = {
 			['bl_ortalab_sinker'] = {
-				name = 'The Sinker',
+				name = '水鬼',
 				text = {
-					'{C:attention}-#1#{} hand size for',
-					'every {C:blue}hand{} you play'
+					'每次 {C:blue}出牌{} ',
+					'{C:attention}-#1#{} 手牌数量',
 				}
 			},
 			['bl_ortalab_hammer'] = {
-				name = 'The Hammer',
+				name = '大锤',
 				text = {
-					'Remove card enhancements',
-					'after they are scored'
+					'去除计分的增强牌的增强',
 				}
 			},
 			['bl_ortalab_caramel_coin'] = {
-				name = 'Caramel Coin',
+				name = '焦糖硬币',
 				text = {
-					'{C:attention}-#1#{} hand size'
+					'{C:attention}-#1#{} 手牌数量'
 				}
 			},
 			['bl_ortalab_saffron_shield'] = {
-				name = 'Saffron Shield',
+				name = '红花护盾',
 				text = {
-					'#1# in #2# cards are', 
-					'drawn face down'
+					'#1# / #2# 几率牌面朝下', 
 				}
 			},
 			['bl_ortalab_rouge_rose'] = {
-				name = 'Rouge Rose',
+				name = '胭脂玫瑰',
 				text = {
-					'Play with an', 
-					'unmodified deck'
+					'以无效果的牌组游玩', 
 				}
 			},
 			['bl_ortalab_silver_sword'] = {
-				name = 'Silver Sword',
+				name = '白银之剑',
 				text = {
-					'Play only {C:attention}#1#{} hand'
+					'只有 {C:attention}#1#{} 次出牌'
 				}
 			}
 		}
