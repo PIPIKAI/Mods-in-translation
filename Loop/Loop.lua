@@ -65,7 +65,7 @@ end
 SMODS.Voucher {
 	key = 'loop',
 	loc_txt = {
-		name = 'Loop',
+		name = '循环',
 		text = {
 			'{C:attention}Unredeems{} certain vouchers,',
 			'allowing them to be',
