@@ -1,0 +1,18 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 1
+
+# Add core functionality
+
+[[patches]]
+[patches.copy]
+target = "main.lua"
+position = "append"
+sources = [
+    "cartomancer.lua",
+    "core/view-deck.lua",
+    "core/flames.lua",
+    "core/shaders.lua",
+    "core/hidden-jokers.lua",
+]
