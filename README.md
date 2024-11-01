@@ -12,7 +12,7 @@
 | [DreadJokers](https://github.com/LunaAstraCassiopeia/DreadJokers)                 | 100% | Ashk     | 2024-11-01 |          |
 | [DX-Tarots](https://github.com/JeffVi/DX-Tarots)                                  | 100% | Ashk     | 2024-11-01 |          |
 | [Golds-Cards](https://github.com/Goldfighter5/Golds-Cards)                        | 100% | Ashk     | 2024-11-01 |          |
-| [JankJonklers](https://github.com/spikeof2010/JankJonklers)                       | 0%   |          | 2024-11-01 |          |
+| [JankJonklers](https://github.com/spikeof2010/JankJonklers)                       | 100%   |          | 2024-11-01 |          |
 | [LobotomyCorp](https://github.com/Mysthaps/LobotomyCorp)                          | 80%  | Ashk     | 2024-11-01 |          |
 | [Loop]()                                                                          | 50%  | Ashk     | 2024-11-01 |          |
 | [MystBlinds](https://github.com/Mysthaps/MystBlinds)                              | 100% | Ashk     | 2024-11-01 |          |
