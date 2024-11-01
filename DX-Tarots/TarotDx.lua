@@ -188,181 +188,170 @@ local function setUpLocalizationTarotDX()
     G.localization.descriptions.Tarot_dx = {}
 
     G.localization.descriptions.Tarot_dx.c_fool_dx = {
-        name = "The Fool DX",
+        name = "愚者·豪华",
         text = {
-            "Creates up to {C:attention}2{} copies of",
-            "the last {C:tarot}Tarot{} or {C:planet}Planet{}",
-            "card used during this run",
-            "{s:0.8,C:tarot}The Fool{s:0.8} excluded"
+            "生成{C:attention}2{}张本赛局中",
+            "上一次使用的{C:tarot}塔罗牌{}或{C:planet}星球牌",
+            "{s:0.8}不包括{s:0.8,C:tarot}愚者"
         }
     }
     G.localization.descriptions.Tarot_dx.c_magician_dx = {
-        name = "The Magician DX",
+        name = "魔术师·豪华",
         text = {
-            "Enhances {C:attention}#1#{}",
-            "selected cards to",
-            "{C:attention}#2#s"
+            "将{C:attention}#1#{}张选定卡牌",
+            "增强为{C:attention}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_high_priestess_dx = {
-        name = "The High Priestess DX",
+        name = "女祭司·豪华",
         text = {
-            "Creates up to {C:attention}#1#",
-            "random {C:planet}Planet{} {C:dark_edition}DX{} cards",
-            "{C:inactive}(Must have room)"
+            "随机生成至多{C:attention}#1#{}张",
+            "{C:dark_edition}豪华{C:planet}星球牌",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_dx.c_empress_dx = {
-        name = "The Empress DX",
+        name = "皇后·豪华",
         text = {
-            "Enhances {C:attention}#1#",
-            "selected cards to",
-            "{C:attention}#2#s"
+            "将至多{C:attention}#1#{}张选定卡牌",
+            "增强为{C:attention}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_emperor_dx = {
-        name = "The Emperor DX",
+        name = "皇帝·豪华",
         text = {
-            "Creates up to {C:attention}#1#",
-            "random {C:tarot}Tarot{} {C:dark_edition}DX{} cards",
-            "{C:inactive}(Must have room)"
+            "随机生成至多{C:attention}#1#{}张",
+            "{C:dark_edition}豪华{C:tarot}塔罗牌",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_dx.c_heirophant_dx = {
-        name = "The Hierophant DX",
+        name = "教皇·豪华",
         text = {
-            "Enhances up to {C:attention}#1#",
-            "selected cards to",
-            "{C:attention}#2#s"
+            "将至多{C:attention}#1#{}张选定卡牌",
+            "增强为{C:attention}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_lovers_dx = {
-        name = "The Lovers DX",
+        name = "恋人·豪华",
         text = {
-            "Enhances {C:attention}#1#{} selected",
-            "card into",
-            "{C:attention}#2#s"
+            "将至多{C:attention}#1#{}张选定卡牌",
+            "增强为{C:attention}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_chariot_dx = {
-        name = "The Chariot DX",
+        name = "战车·豪华",
         text = {
-            "Enhances {C:attention}#1#{} selected",
-            "card into",
-            "{C:attention}#2#s"
+            "将至多{C:attention}#1#{}张选定卡牌",
+            "增强为{C:attention}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_justice_dx = {
-        name = "Justice DX",
+        name = "正义·豪华",
         text = {
-            "Enhances {C:attention}#1#{} selected",
-            "card into",
-            "{C:attention}#2#s"
+            "将至多{C:attention}#1#{}张选定卡牌",
+            "增强为{C:attention}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_hermit_dx = {
-        name = "The Hermit DX",
+        name = "隐者·豪华",
         text = {
-            "Triples money",
-            "{C:inactive}(Max of {C:money}$#1#{C:inactive})"
+            "资金翻三倍",
+            "{C:inactive}（至多{C:money}$#1#{C:inactive}）"
         }
     }
     G.localization.descriptions.Tarot_dx.c_wheel_of_fortune_dx = {
-        name = "The Wheel of Fortune DX",
+        name = "命运之轮·豪华",
         text = {
-            "{C:green}#1# in #2#{} chance to add",
-            "{C:dark_edition}Foil{}, {C:dark_edition}Holographic{}, or",
-            "{C:dark_edition}Polychrome{} edition",
-            "to a random {C:attention}Joker"
+            "有{C:green}#1#/#2#{}的几率",
+            "为随机一张{C:attention}小丑牌",
+            "添加{C:dark_edition}闪箔{}、{C:dark_edition}镭射{}",
+            "或{C:dark_edition}多彩{}版本"
         }
     }
     G.localization.descriptions.Tarot_dx.c_strength_dx = {
-        name = "Strength DX",
+        name = "力量·豪华",
         text = {
-            "Increases rank of",
-            "up to {C:attention}#1#{} selected",
-            "cards by {C:attention}1"
+            "将最多{C:attention}#1#{}张",
+            "选定卡牌的",
+            "点数提高{C:attention}1"
         }
     }
     G.localization.descriptions.Tarot_dx.c_hanged_man_dx = {
-        name = "The Hanged Man DX",
+        name = "倒吊人·豪华",
         text = {
-            "Destroys up to",
-            "{C:attention}#1#{} selected cards"
+            "摧毁至多{C:attention}#1#{}张",
+            "选定卡牌"
         }
     }
     G.localization.descriptions.Tarot_dx.c_death_dx = {
-        name = "Death DX",
+        name = "死神·豪华",
         text = {
-            "Select {C:attention}#1#{} cards,",
-            "convert the {C:attention}left{} cards",
-            "into the {C:attention}right{} card",
-            "{C:inactive}(Drag to rearrange)"
+            "选定{C:attention}#1#{}张牌",
+            "使其全部变为{C:attention}最右侧{}的牌",
+            "{C:inactive}（拖动以改变位置）"
         }
     }
     G.localization.descriptions.Tarot_dx.c_temperance_dx = {
-        name = "Temperance DX",
+        name = "节制·豪华",
         text = {
-            "Gives double the total sell",
-            "value of all current",
-            "Jokers {C:inactive}(Max of {C:money}$#1#{C:inactive})",
-            "{C:inactive}(Currently {C:money}$#2#{C:inactive})"
+            "获得双倍于当前所拥有的",
+            "小丑牌售出总价的资金",
+            "{C:inactive}（上限为{C:money}$#1#{C:inactive}）",
+            "{C:inactive}（当前可获得{C:money}$#2#{C:inactive}）"
         }
     }
     G.localization.descriptions.Tarot_dx.c_devil_dx = {
-        name = "The Devil DX",
+        name = "恶魔·豪华",
         text = {
-            "Enhances {C:attention}#1#{} selected",
-            "card into",
-            "{C:attention}#2#s"
+            "将至多{C:attention}#1#{}张选定卡牌",
+            "增强为{C:attention}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_tower_dx = {
-        name = "The Tower DX",
+        name = "塔·豪华",
         text = {
-            "Enhances {C:attention}#1#{} selected",
-            "card into",
-            "{C:attention}#2#s"
+            "将至多{C:attention}#1#{}张选定卡牌",
+            "增强为{C:attention}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_star_dx = {
-        name = "The Star DX",
+        name = "星星·豪华",
         text = {
-            "Converts up to",
-            "{C:attention}#1#{} selected cards",
-            "to {V:1}#2#{}"
+            "将至多{C:attention}#1#{}张选定卡牌",
+            "转换为{V:1}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_moon_dx = {
-        name = "The Moon DX",
+        name = "月亮·豪华",
         text = {
-            "Converts up to",
-            "{C:attention}#1#{} selected cards",
-            "to {V:1}#2#{}"
+            "将最多{C:attention}#1#{}张",
+            "选定卡牌",
+            "转换为{V:1}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_sun_dx = {
-        name = "The Sun DX",
+        name = "太阳·豪华",
         text = {
-            "Converts up to",
-            "{C:attention}#1#{} selected cards",
-            "to {V:1}#2#{}"
+            "将最多{C:attention}#1#{}张",
+            "选定卡牌",
+            "转换为{V:1}#2#"
         }
     }
     G.localization.descriptions.Tarot_dx.c_judgement_dx = {
-        name = "Judgement DX",
+        name = "审判·豪华",
         text = {
-            "Creates a random",
-            "{C:green}uncommon{} {C:attention}Joker{} card",
-            "{C:inactive}(Must have room)"
+            "随机生成一张",
+            "{C:green}罕见{C:attention}小丑牌",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_dx.c_world_dx = {
-        name = "The World DX",
+        name = "世界·豪华",
         text = {
-            "Converts up to",
-            "{C:attention}#1#{} selected cards",
-            "to {V:1}#2#{}"
+            "将最多{C:attention}#1#{}张",
+            "选定卡牌",
+            "转换为{V:1}#2#"
         }
     }
 end
@@ -372,141 +361,126 @@ local function setUpLocalizationTarotCU()
     G.localization.descriptions.Tarot_cu = {}
 
     G.localization.descriptions.Tarot_cu.c_fool_cu = {
-        name = "The Cursed Fool",
+        name = "受诅愚者",
         text = {
-            "{C:dark_edition}+1{} consumable slot.",
-            "Creates 2 copies of",
-            "{C:tarot}The Fool{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "{C:dark_edition}+1{}消耗牌槽位",
+            "生成2张{C:tarot}愚者{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_magician_cu = {
-        name = "The Cursed Magician",
+        name = "蛊术师",
         text = {
-            "Permanently doubles all listed",
-            "{C:green}probabilities{}. Creates a",
-            "copy of {C:tarot}The Magician{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "所有标注出的{C:green}几率{}永久翻倍",
+            "生成一张{C:tarot}魔术师{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_high_priestess_cu = {
-        name = "The Cursed High Priestess",
+        name = "降咒女祭司",
         text = {
-            "{C:planet}Planet{} cards are {C:attention}#1# times{}",
-            "more likely to be {C:dark_edition}Foil{},",
-            "{C:dark_edition}Holographic{}, or {C:dark_edition}Polychrome{}.",
-            "Creates up to two {C:planet}Planet{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "{C:planet}星球牌{}带有{C:dark_edition}闪箔{}、{C:dark_edition}镭射",
+            "或{C:dark_edition}多彩{}的几率提升{C:attention}#1#倍",
+            "生成至多两张{C:dark_edition}豪华{C:planet}星球牌",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_empress_cu = {
-        name = "The Empress DX",
+        name = "邪后",
         text = {
-            "Permanently increases",
-            "{C:attention}#2#{} bonus to",
-            "{C:red}+#1#{} Mult. Creates a",
-            "copy of {C:tarot}The Empress{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "永久提升{C:attention}#2#{}的加成至{C:red}+#1#{}倍率",
+            "生成一张{C:tarot}皇后{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_emperor_cu = {
-        name = "The Cursed Emperor",
+        name = "邪皇",
         text = {
-            "Creates {C:attention}#1#{} random",
-            "{C:dark_edition}negative DX{} {C:tarot}Tarot{} cards"
+            "随机生成{C:attention}#1#{}张",
+            "{C:dark_edition}负片豪华{C:tarot}塔罗牌"
         }
     }
     G.localization.descriptions.Tarot_cu.c_heirophant_cu = {
-        name = "The Cursed Hierophant",
+        name = "冥国教主",
         text = {
-            "Permanently increases",
-            "{C:attention}#2#{} bonus to",
-            "{C:blue}+#1#{} extra chips. Creates a",
-            "copy of {C:tarot}The Hierophant{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "永久提升{C:attention}#2#{}的加成至{C:blue}+#1#{}筹码",
+            "生成一张{C:tarot}教皇{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_lovers_cu = {
-        name = "The Cursed Lovers",
+        name = "殉情虐恋",
         text = {
-            "{C:attention}#1#s{} now copy the",
-            "rank of the card to their {C:attention}left{}",
-            "{C:inactive}(Drag to rearrange)",
-            "Creates a copy of",
-            "{C:tarot}The Lovers{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "{C:attention}#1#{}将复制",
+            "其{C:attention}左侧{}卡牌的点数",
+            "{C:inactive}（拖动以改变位置）",
+            "生成一张{C:tarot}恋人{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_chariot_cu = {
-        name = "The Cursed Chariot",
+        name = "鬼魅战车",
         text = {
-            "Permanently increases",
-            "{C:attention}#2#{} bonus to",
-            "{X:red,C:white} X#1# {} Mult. Creates a",
-            "copy of {C:tarot}The Chariot{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "永久提升{C:attention}#2#{}的加成至{X:red,C:white} X#1#",
+            "生成一张{C:tarot}战车{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_justice_cu = {
-        name = "Cursed Justice",
+        name = "畸变正义",
         text = {
-            "Permanently increases",
-            "{C:attention}#2#{} bonus to",
-            "{X:red,C:white} X#1# {} Mult. Creates a",
-            "copy of {C:tarot}Justice {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "永久提升{C:attention}#2#{}的加成至{X:red,C:white} X#1#",
+            "生成一张{C:tarot}正义{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_hermit_cu = {
-        name = "The Cursed Hermit",
+        name = "暗翳隐者",
         text = {
-            "Gives {C:money}$#1#{}"
+            "给予{C:money}$#1#"
         }
     }
     G.localization.descriptions.Tarot_cu.c_wheel_of_fortune_cu = {
-        name = "The Cursed Wheel of Fortune",
+        name = "宿运旋轮",
         text = {
-            "Add {C:dark_edition}Foil{}, {C:dark_edition}Holographic{}, or",
-            "{C:dark_edition}Polychrome{} edition",
-            "to a random {C:attention}Jokers{}",
-            "{C:green}#1# in #2#{} chance to repeat once"
+            "为随机一张{C:attention}小丑牌",
+            "添加{C:dark_edition}闪箔{}、{C:dark_edition}镭射{}",
+            "或{C:dark_edition}多彩{}版本",
+            "且有{C:green}#1#/#2#{}的几率重新触发一次"
         }
     }
     G.localization.descriptions.Tarot_cu.c_strength_cu = {
-        name = "Cursed Strength",
+        name = "异界之力",
         text = {
-            "Select up to {C:attention}#1#{} cards,",
-            "rank up {C:attention}all cards{} matching",
-            "{C:attention}selected ranks{}"
+            "选定至多{C:attention}#1#{}张卡牌",
+            "并将{C:attention}所有{}相同点数的牌",
+            "的点数提升{C:attention}1"
         }
     }
     G.localization.descriptions.Tarot_cu.c_hanged_man_cu = {
-        name = "The Cursed Hanged Man",
+        name = "悬命之人",
         text = {
-            "Select up to {C:attention}#1#{} cards,",
-            "destroys {C:attention}all cards{} matching",
-            "{C:attention}selected ranks{}"
+            "选定至多{C:attention}#1#{}张卡牌",
+            "摧毁与之{C:attention}点数相同{}的{C:attention}所有卡牌"
         }
     }
     G.localization.descriptions.Tarot_cu.c_death_cu = {
-        name = "Cursed Death",
+        name = "决罚死神",
         text = {
-            "Select {C:attention}#1#{} cards,",
-            "convert the {C:attention}left{} cards",
-            "into the {C:attention}right{} card",
-            "{C:inactive}(Drag to rearrange)",
-            "Creates two copies",
-            "of {C:tarot}Death{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "选定{C:attention}#1#{}张牌",
+            "使其全部变为{C:attention}最右侧{}的牌",
+            "{C:inactive}（拖动以改变位置）",
+            "生成两张{C:tarot}死神{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_temperance_cu = {
-        name = "Cursed Temperance",
+        name = "欲壑难平",
         text = {
-            "Gives {C:money}$10{} per",
-            "current Joker",
-            "{C:inactive}(Max of {C:money}$#1#{C:inactive})",
-            "{C:inactive}(Currently {C:money}$#2#{C:inactive})"
+            "每拥有一张小丑牌",
+            "给予{C:money}$10",
+            "{C:inactive}（上限为{C:money}$#1#{C:inactive}）",
+            "{C:inactive}（当前可获得{C:money}$#2#{C:inactive}）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_devil_cu = {
@@ -516,62 +490,56 @@ local function setUpLocalizationTarotCU()
             "{C:attention}#2#{} gold gain to",
             "{C:money}$#1#{}. Creates a",
             "copy of {C:tarot}The Devil{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_tower_cu = {
-        name = "The Cursed Tower",
+        name = "咒波高塔",
         text = {
-            "Permanently increases",
-            "{C:attention}#2#{} bonus to",
-            "{C:blue}+#1#{} Chips. Creates a",
-            "copy of {C:tarot}The Tower{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "永久提升{C:attention}#2#{}的加成至{C:blue}+#1#{}筹码",
+            "生成一张{C:tarot}塔{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_star_cu = {
-        name = "The Cursed Star",
+        name = "灼目死星",
         text = {
-            "{V:1}#1#{} cannot",
-            "get {C:attention}debuffed{}. Creates a",
-            "copy of {C:tarot}The Star{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "{V:1}#1#{}牌永不{C:attention}失效",
+            "生成一张{C:tarot}星星{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_moon_cu = {
-        name = "The Cursed Moon",
+        name = "月之暗面",
         text = {
-            "{V:1}#1#{} cannot",
-            "get {C:attention}debuffed{}. Creates a",
-            "copy of {C:tarot}The Moon{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "{V:1}#1#{}牌永不{C:attention}失效",
+            "生成一张{C:tarot}月亮{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_sun_cu = {
-        name = "The Cursed Sun",
+        name = "凌空黑日",
         text = {
-            "{V:1}#1#{} cannot",
-            "get {C:attention}debuffed{}. Creates a",
-            "copy of {C:tarot}The Sun{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "{V:1}#1#{}牌永不{C:attention}失效",
+            "生成一张{C:tarot}太阳{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_judgement_cu = {
-        name = "Cursed Judgement",
+        name = "阴蔑审判",
         text = {
-            "Creates a random",
-            "{C:red}rare{} {C:attention}Joker{} card",
-            "with a random {C:dark_edition}edition{}",
-            "{C:inactive}(Must have room)"
+            "随机生成一张",
+            "带有随机{C:dark_edition}版本{}的",
+            "{C:red}稀有{C:attention}小丑牌",
+            "{C:inactive}（必须有空位）"
         }
     }
     G.localization.descriptions.Tarot_cu.c_world_cu = {
-        name = "The Cursed World",
+        name = "忿怨世界",
         text = {
-            "{V:1}#1#{} cannot",
-            "get {C:attention}debuffed{}. Creates a",
-            "copy of {C:tarot}The World{} {C:dark_edition}DX{}",
-            "{C:inactive}(Must have room)"
+            "{V:1}#1#{}牌永不{C:attention}失效",
+            "生成一张{C:tarot}世界{}·{C:dark_edition}豪华",
+            "{C:inactive}（必须有空位）"
         }
     }
 end
@@ -581,111 +549,99 @@ local function setUpLocalizationPlanetDX()
     G.localization.descriptions.Planet_dx = {}
 
     G.localization.descriptions.Planet_dx.c_mercury_dx = {
-        name = "Mercury DX",
+        name = "水星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_venus_dx = {
-        name = "Venus DX",
+        name = "金星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_earth_dx = {
-        name = "Earth DX",
+        name = "地球·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_mars_dx = {
-        name = "Mars DX",
+        name = "火星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_jupiter_dx = {
-        name = "Jupiter DX",
+        name = "木星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_saturn_dx = {
-        name = "Saturn DX",
+        name = "土星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:attention}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_uranus_dx = {
-        name = "Uranus DX",
+        name = "天王星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_neptune_dx = {
-        name = "Neptune DX",
+        name = "海王星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_pluto_dx = {
-        name = "Pluto DX",
+        name = "冥王星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_ceres_dx = {
-        name = "Ceres DX",
+        name = "谷神星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_planet_x_dx = {
-        name = "Planet X DX",
+        name = "X行星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
     G.localization.descriptions.Planet_dx.c_eris_dx = {
-        name = "Eris DX",
+        name = "阋神星·豪华",
         text = {
-            "{s:0.8}({s:0.8,V:1}lvl.#1#{s:0.8}){} Level up {C:dark_edition}x2{}",
-            "{C:attention}#2#",
-            "{C:mult}+#3#{} Mult and",
-            "{C:chips}+#4#{} chips"
+            "{s:0.8}（{s:0.8,V:1}等级#1#{s:0.8}）",
+            "提升{C:attention}#2#{C:dark_edition}两{}级",
+            "{C:mult}+#3#{}倍率，{C:chips}+#4#{}筹码"
         }
     }
 end
@@ -695,147 +651,136 @@ local function setUpLocalizationSpectralDX()
     G.localization.descriptions.Spectral_dx = {}
     
     G.localization.descriptions.Spectral_dx.c_familiar_dx = {
-        name = "Familiar DX",
+        name = "使魔·豪华",
         text = {
-            "Destroy {C:attention}2{} selected",
-            "cards in your hand, add",
-            "{C:attention}#1#{} random {C:attention}Enhanced face",
-            "{C:attention}cards{} to your hand"
+            "摧毁{C:attention}2{}张选定的手牌",
+            "并向手牌中添加{C:attention}#1#{}张",
+            "随机{C:attention}增强{}的{C:attention}人头牌"
         }
     }
     G.localization.descriptions.Spectral_dx.c_grim_dx = {
-        name = "Grim DX",
+        name = "严峻·豪华",
         text = {
-            "Destroy {C:attention}2{} selected",
-            "cards in your hand,",
-            "add {C:attention}#1#{} random {C:attention}Enhanced",
-            "{C:attention}Aces{} to your hand"
+            "摧毁{C:attention}2{}张选定的手牌",
+            "并向手牌中添加{C:attention}#1#{}张",
+            "随机{C:attention}增强{}的{C:attention}A"
         }
     }
     G.localization.descriptions.Spectral_dx.c_incantation_dx = {
-        name = "Incantation DX",
+        name = "咒语·豪华",
         text = {
-            "Destroy {C:attention}2{} selected",
-            "cards in your hand, add {C:attention}#1#",
-            "random {C:attention}Enhanced numbered",
-            "{C:attention}cards{} to your hand"
+            "摧毁{C:attention}2{}张选定的手牌",
+            "并向手牌中添加{C:attention}#1#{}张",
+            "随机{C:attention}增强{}的{C:attention}数字牌"
         }
     }
     G.localization.descriptions.Spectral_dx.c_talisman_dx = {
-        name = "Talisman DX",
+        name = "护身符·豪华",
         text = {
-            "Add a {C:attention}Gold Seal{}",
-            "to up to {C:attention}3{} selected",
-            "cards in your hand"
+            "为{C:attention}3{}张选定的手牌",
+            "打上{C:attention}金色蜡封"
         }
     }
     G.localization.descriptions.Spectral_dx.c_aura_dx = {
-        name = "Aura DX",
+        name = "灵气·豪华",
         text = {
-            "Add {C:dark_edition}Foil{}, {C:dark_edition}Holographic{},",
-            "or {C:dark_edition}Polychrome{} effect to up",
-            "to {C:attention}3{} selected cards in hand"
+            "选定至多{C:attention}3{}张手牌",
+            "为其添加{C:dark_edition}闪箔{}、{C:dark_edition}镭射",
+            "或{C:dark_edition}多彩{}版本中的一种"
         }
     }
     G.localization.descriptions.Spectral_dx.c_wraith_dx = {
-        name = "Wraith DX",
+        name = "幽灵·豪华",
         text = {
-            "Creates a random",
-            "{C:red}Rare{C:attention} Joker{},"
+            "随机生成一张",
+            "{C:red}稀有{C:attention}小丑牌"
         }
     }
     G.localization.descriptions.Spectral_dx.c_sigil_dx = {
-        name = "Sigil DX",
+        name = "符印·豪华",
         text = {
-            "Converts all cards",
-            "in hand to a single",
-            "selected {C:attention}suit"
+            "将所有手牌的花色",
+            "转换为选定牌的{C:attention}花色"
         }
     }
     G.localization.descriptions.Spectral_dx.c_ouija_dx = {
-        name = "Ouija DX",
+        name = "显灵盘·豪华",
         text = {
-            "Converts all cards",
-            "in hand to a single",
-            "selected {C:attention}rank"
+            "将所有手牌的点数",
+            "转换为选定牌的{C:attention}点数"
         }
     }
     G.localization.descriptions.Spectral_dx.c_ectoplasm_dx = {
-        name = "Ectoplasm DX",
+        name = "灵质·豪华",
         text = {
-            "Add {C:dark_edition}Negative{} to",
-            "a random {C:attention}Joker,",
-            "destroys {C:attention}all{} consumables"
+            "为随机一张{C:attention}小丑牌",
+            "添加{C:dark_edition}负片{}效果",
+            "摧毁{C:attention}所有{}消耗牌"
         }
     }
     G.localization.descriptions.Spectral_dx.c_immolate_dx = {
-        name = "Immolate DX",
+        name = "火祭·豪华",
         text = {
-            "Destroys {C:attention}#1#{} selected",
-            "cards in hand,",
-            "gain {C:money}$#2#"
+            "摧毁{C:attention}#1#{}张选定的手牌",
+            "获得{C:money}$#2#"
         }
     }
     G.localization.descriptions.Spectral_dx.c_ankh_dx = {
-        name = "Ankh DX",
+        name = "生命十字章·豪华",
         text = {
-            "Create a copy of a",
-            "random {C:attention}Joker{}"
+            "随机复制一张{C:attention}小丑牌"
         }
     }
     G.localization.descriptions.Spectral_dx.c_deja_vu_dx = {
-        name = "Deja Vu DX",
+        name = "既视感·豪华",
         text = {
-            "Add a {C:red}Red Seal{}",
-            "to up to {C:attention}3{} selected",
-            "cards in your hand"
+            "为手牌中至多{C:attention}3{}张",
+            "选定的卡牌",
+            "打上{C:red}红色蜡封"
         }
     }
     G.localization.descriptions.Spectral_dx.c_hex_dx = {
-        name = "Hex DX",
+        name = "妖法·豪华",
         text = {
-            "Add {C:dark_edition}Polychrome{} to a",
-            "random {C:attention}Joker{}"
+            "为随机一张{C:attention}小丑牌",
+            "添加{C:dark_edition}多彩"
         }
     }
     G.localization.descriptions.Spectral_dx.c_trance_dx = {
-        name = "Trance DX",
+        name = "入迷·豪华",
         text = {
-            "Add a {C:blue}Blue Seal{}",
-            "to up to {C:attention}3{} selected",
-            "cards in your hand"
+            "为手牌中至多{C:attention}3{}张",
+            "选定的卡牌",
+            "打上{C:blue}蓝色蜡封"
         }
     }
     G.localization.descriptions.Spectral_dx.c_medium_dx = {
-        name = "Medium DX",
+        name = "介质·豪华",
         text = {
-            "Add a {C:purple}Purple Seal{}",
-            "to up to {C:attention}3{} selected",
-            "cards in your hand"
+            "为手牌中至多{C:attention}3{}张",
+            "选定的卡牌",
+            "打上{C:purple}紫色蜡封"
         }
     }
     G.localization.descriptions.Spectral_dx.c_cryptid_dx = {
-        name = "Cryptid DX",
+        name = "神秘生物·豪华",
         text = {
-            "Create {C:attention}#1#{} copies of",
-            "{C:attention}1{} selected card",
-            "in your hand"
+            "为所选定的{C:attention}1{}张手牌",
+            "生成{C:attention}#1#{}张复制"
         }
     }
     G.localization.descriptions.Spectral_dx.c_soul_dx = {
-        name = "The Soul DX",
+        name = "灵魂·豪华",
         text = {
-            "Creates a",
-            "{C:legendary,E:1}Legendary{} Joker",
-            "{C:inactive}(Don't need room...?)"
+            "生成一张{C:legendary,E:1}传奇{}小丑牌",
+            "{C:inactive}（不需要空间……？）"
         }
     }
     G.localization.descriptions.Spectral_dx.c_black_hole_dx = {
-        name = "Black Hole DX",
+        name = "黑洞·豪华",
         text = {
-            "Upgrade every",
-            "{C:legendary,E:1}poker hand",
-            "by {C:attention}3{} levels"
+            "所有{C:legendary,E:1}牌型",
+            "提升{C:attention}3{}级"
         }
     }
 end
@@ -843,135 +788,123 @@ end
 local function setUpLocalizationBoosterDX()
 
     G.localization.descriptions.Other.p_arcana_normal_dx = {
-        name = "Arcana Pack DX",
+        name = "豪华秘术包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:tarot} Tarot{} cards to",
-            "be used immediately",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:tarot}塔罗牌{}中",
+            "选择{C:attention}#1#{}张并立即使用",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_arcana_jumbo_dx = {
-        name = "Jumbo Arcana Pack DX",
+        name = "巨型豪华秘术包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:tarot} Tarot{} cards to",
-            "be used immediately",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:tarot}塔罗牌{}中",
+            "选择{C:attention}#1#{}张并立即使用",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_arcana_mega_dx = {
-        name = "Mega Arcana Pack DX",
+        name = "超级豪华秘术包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:tarot} Tarot{} cards to",
-            "be used immediately",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:tarot}塔罗牌{}中",
+            "选择{C:attention}#1#{}张并立即使用",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_celestial_normal_dx = {
-        name = "Celestial Pack DX",
+        name = "豪华天体包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:planet} Planet{} cards to",
-            "be used immediately",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:planet}星球牌{}中",
+            "选择{C:attention}#1#{}张并立即使用",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_celestial_jumbo_dx = {
-        name = "Jumbo Celestial Pack DX",
+        name = "巨型豪华天体包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:planet} Planet{} cards to",
-            "be used immediately",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:planet}星球牌{}中",
+            "选择{C:attention}#1#{}张并立即使用",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_celestial_mega_dx = {
-        name = "Mega Celestial Pack DX",
+        name = "超级豪华天体包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:planet} Planet{} cards to",
-            "be used immediately",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:planet}星球牌{}中",
+            "选择{C:attention}#1#{}张并立即使用",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_spectral_normal_dx = {
-        name = "Spectral Pack DX",
+        name = "豪华幻灵包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:spectral} Spectral{} cards to",
-            "be used immediately",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:spectral}幻灵牌{}中",
+            "选择{C:attention}#1#{}张并立即使用",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_spectral_jumbo_dx = {
-        name = "Jumbo Spectral Pack DX",
+        name = "巨型豪华幻灵包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:spectral} Spectral{} cards to",
-            "be used immediately",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:spectral}幻灵牌{}中",
+            "选择{C:attention}#1#{}张并立即使用",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_spectral_mega_dx = {
-        name = "Mega Spectral Pack DX",
+        name = "超级豪华幻灵包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:spectral} Spectral{} cards to",
-            "be used immediately",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:spectral}幻灵牌{}中",
+            "选择{C:attention}#1#{}张并立即使用",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_standard_normal_dx = {
-        name = "Standard Pack DX",
+        name = "豪华标准包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:attention} Playing{} cards to",
-            "add to your deck",
-            "{C:inactive}(You feel lucky...)"
+            "从最多{C:attention}#2#{}张{C:attention}扑克牌{}中",
+            "选择{C:attention}#1#{}张加入牌组",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_standard_jumbo_dx = {
-        name = "Jumbo Standard Pack DX",
+        name = "巨型豪华标准包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:attention} Playing{} cards to",
-            "add to your deck",
-            "{C:inactive}(You feel lucky...)"
+            "从最多{C:attention}#2#{}张{C:attention}扑克牌{}中",
+            "选择{C:attention}#1#{}张加入牌组",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_standard_mega_dx = {
-        name = "Mega Standard Pack DX",
+        name = "超级豪华标准包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:attention} Playing{} cards to",
-            "add to your deck",
-            "{C:inactive}(You feel lucky...)"
+            "从最多{C:attention}#2#{}张{C:attention}扑克牌{}中",
+            "选择{C:attention}#1#{}张加入牌组",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_buffoon_normal_dx = {
-        name = "Buffoon Pack DX",
+        name = "豪华丑角包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:joker} Joker{} cards",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:joker}小丑牌{}中",
+            "选择{C:attention}#1#{}张",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_buffoon_jumbo_dx = {
-        name = "Jumbo Buffoon Pack DX",
+        name = "巨型豪华丑角包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:joker} Joker{} cards",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:joker}小丑牌{}中",
+            "选择{C:attention}#1#{}张",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
     G.localization.descriptions.Other.p_buffoon_mega_dx = {
-        name = "Mega Buffoon Pack DX",
+        name = "超级豪华丑角包",
         text = {
-            "Choose {C:attention}#1#{} of up to",
-            "{C:attention}#2#{C:joker} Joker{} cards",
-            "{C:inactive}(You feel lucky...)"
+            "从至多{C:attention}#2#{}张{C:joker}小丑牌{}中",
+            "选择{C:attention}#1#{}张",
+            "{C:inactive}（你感到运气满满……）"
         }
     }
 end
@@ -979,12 +912,10 @@ end
 local function setUpLocalizationEnhanced()
     
     G.localization.descriptions.Enhanced.m_wild_cu = {
-        name = "Wild Card",
+        name = "百搭牌",
         text = {
-            "Can be used",
-            "as any suit",
-            "Copy rank of",
-            "its left card"
+            "可以视作任何花色",
+            "复制其左侧卡牌的点数"
         }
     }
 end
@@ -1002,33 +933,33 @@ local function setUpDX()
     setUpLocalizationBoosterDX()
     setUpLocalizationEnhanced()
     G.localization.descriptions.Other.dx = {
-        name = "Deluxe Version",
+        name = "豪华版",
         text = {
-            "Enhanced effect",
+            "卡牌效果获得增强",
         }
     }
     G.localization.descriptions.Other.unique = {
-        name = "Unique",
+        name = "独一无二",
         text = {
-            "Cannot be pulled",
-            "again this run"
+            "本赛局内",
+            "不会再次出现"
         }
     }
-    G.localization.misc.labels['tarot_dx'] = "Tarot DX"
-    G.localization.misc.labels['planet_dx'] = "Planet DX"
-    G.localization.misc.labels['spectral_dx'] = "Spectral DX"
-    G.localization.misc.labels['booster_dx'] = "Booster DX"
-    G.localization.misc.labels['dx'] = "DX Version"
-    G.localization.misc.labels['unique'] = "Unique"
+    G.localization.misc.labels['tarot_dx'] = "豪华塔罗牌"
+    G.localization.misc.labels['planet_dx'] = "豪华星球牌"
+    G.localization.misc.labels['spectral_dx'] = "豪华幻灵牌"
+    G.localization.misc.labels['booster_dx'] = "豪华补充包"
+    G.localization.misc.labels['dx'] = "豪华版"
+    G.localization.misc.labels['unique'] = "独一无二"
     G.localization.misc.labels['star_bu'] = "Diamonds Buff"
     G.localization.misc.labels['moon_bu'] = "Clubs Buff"
     G.localization.misc.labels['sun_bu'] = "Hearts Buff"
     G.localization.misc.labels['world_bu'] = "Spades Buff"
-    G.localization.misc.dictionary['k_tarot_dx'] = "Tarot DX"
-    G.localization.misc.dictionary['k_tarot_cu'] = "Cursed Tarot"
-    G.localization.misc.dictionary['k_planet_dx'] = "Planet DX"
-    G.localization.misc.dictionary['k_spectral_dx'] = "Spectral DX"
-    G.localization.misc.dictionary['k_booster_dx'] = "Booster DX"
+    G.localization.misc.dictionary['k_tarot_dx'] = "豪华塔罗牌"
+    G.localization.misc.dictionary['k_tarot_cu'] = "受诅塔罗牌"
+    G.localization.misc.dictionary['k_planet_dx'] = "豪华星球牌"
+    G.localization.misc.dictionary['k_spectral_dx'] = "豪华幻灵牌"
+    G.localization.misc.dictionary['k_booster_dx'] = "豪华补充包"
 
     -- Manage loc_colour
     loc_colour('red', nil)
@@ -1527,7 +1458,7 @@ local function overrides()
                         end
                     end
                     -- Bunco Glitter compat
-                    if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and card.edition.bunc_glitter then
+                    if SMODS.Mods and SMODS.Mods['Bunco'] and card.edition.bunc_glitter then
                         G.GAME.hands[hand].chips = math.floor(math.max(G.GAME.hands[hand].chips * G.P_CENTERS.e_bunc_glitter.config.Xchips, 0))
                         if not instant then
                             G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
@@ -1539,7 +1470,7 @@ local function overrides()
                         end
                     end
                     -- Cryptid Mosaic compat
-                    if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and card.edition.cry_mosaic then
+                    if SMODS.Mods and SMODS.Mods['Cryptid'] and card.edition.cry_mosaic then
                         G.GAME.hands[hand].chips = math.floor(math.max(G.GAME.hands[hand].chips * G.P_CENTERS.e_cry_mosaic.config.x_chips, 0))
                         if not instant then
                             G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
@@ -1551,7 +1482,7 @@ local function overrides()
                         end
                     end
                     -- Cryptid Oversaturated compat
-                    if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and card.edition.cry_oversat then
+                    if SMODS.Mods and SMODS.Mods['Cryptid'] and card.edition.cry_oversat then
                         G.GAME.hands[hand].chips = math.floor(math.max(G.GAME.hands[hand].chips * 2, 0))
                         G.GAME.hands[hand].mult = math.floor(math.max(G.GAME.hands[hand].mult * 2, 1))
                         if not instant then
@@ -1565,7 +1496,7 @@ local function overrides()
                         end
                     end
                     -- Cryptid Astral Compat
-                    if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and card.edition.cry_astral then
+                    if SMODS.Mods and SMODS.Mods['Cryptid'] and card.edition.cry_astral then
                         G.GAME.hands[hand].mult = math.floor(math.max(G.GAME.hands[hand].mult ^ G.P_CENTERS.e_cry_astral.config.e_mult, 1))
                         if not instant then
                             G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
@@ -1577,7 +1508,7 @@ local function overrides()
                         end
                     end
                     -- Cryptid Glitched compat
-                    if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and card.edition.cry_glitched then
+                    if SMODS.Mods and SMODS.Mods['Cryptid'] and card.edition.cry_glitched then
 
                         local bad = (love.math.random(1, 10) / 10)
                         local gud = (love.math.random(11, 100) / 10)
@@ -1606,7 +1537,7 @@ local function overrides()
         else    -- Do not overwrite
             level_up_hand_ref(card, hand, instant, amount)
             if card and card.ability and card.ability.set and card.ability.type == '_dx' then
-                level_up_hand_ref(card, hand, instant, amount)
+            level_up_hand_ref(card, hand, instant, amount)
             end
         end
     end
@@ -1645,7 +1576,7 @@ local function overrides()
                 elseif specific_vars.suit == 'Spades' and G.GAME.used_cu_augments and G.GAME.used_cu_augments.c_world_cu then
                     badges[#badges + 1] = 'world_bu'
                 end
-                if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load then
+                if SMODS.Mods and SMODS.Mods['Bunco'] then
                     if specific_vars.suit == 'bunc_Fleurons' and G.GAME.used_cu_augments and G.GAME.used_cu_augments.c_bunc_sky_cu then
                         badges[#badges + 1] = 'sky_bu'
                     elseif specific_vars.suit == 'bunc_Halberds' and G.GAME.used_cu_augments and G.GAME.used_cu_augments.c_bunc_abyss_cu then
@@ -1948,8 +1879,8 @@ local function overrides()
                     if v == 'holographic' then info_queue[#info_queue+1] = G.P_CENTERS['e_holo'] end
                     if v == 'polychrome' then info_queue[#info_queue+1] = G.P_CENTERS['e_polychrome'] end
                     if v == 'negative' then info_queue[#info_queue+1] = G.P_CENTERS['e_negative'] end
-                    if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and v == 'bunc_glitter' then info_queue[#info_queue+1] = G.P_CENTERS['e_bunc_glitter'] end
-                    if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and v == 'bunc_fluorescent' then info_queue[#info_queue+1] = G.P_CENTERS['e_bunc_fluorescent'] end
+                    if SMODS.Mods and SMODS.Mods['Bunco'] and v == 'bunc_glitter' then info_queue[#info_queue+1] = G.P_CENTERS['e_bunc_glitter'] end
+                    if SMODS.Mods and SMODS.Mods['Bunco'] and v == 'bunc_fluorescent' then info_queue[#info_queue+1] = G.P_CENTERS['e_bunc_fluorescent'] end
                     if v == 'negative_consumable' then info_queue[#info_queue+1] = {key = 'e_negative_consumable', set = 'Edition', config = {extra = 1}} end
                     if v == 'gold_seal' then info_queue[#info_queue+1] = {key = 'gold_seal', set = 'Other'} end
                     if v == 'blue_seal' then info_queue[#info_queue+1] = {key = 'blue_seal', set = 'Other'} end
@@ -2066,10 +1997,10 @@ local function overrides()
                 end
             end
 
-            if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and AUT.badges and (card.ability.name == 'The Sky DX' or card.ability.name == 'The Abyss DX') then
+            if SMODS.Mods and SMODS.Mods['Bunco'] and AUT.badges and (card.ability.name == 'The Sky DX' or card.ability.name == 'The Abyss DX') then
                 badges[1] = create_badge('Tarot?', card_type_colour, nil, 1.2)
             end
-            if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and AUT.badges and (card.ability.name == 'Quaoar DX' or card.ability.name == 'Haumea DX'or card.ability.name == 'Sedna DX'or card.ability.name == 'Makemake DX') then
+            if SMODS.Mods and SMODS.Mods['Bunco'] and AUT.badges and (card.ability.name == 'Quaoar DX' or card.ability.name == 'Haumea DX'or card.ability.name == 'Sedna DX'or card.ability.name == 'Makemake DX') then
                 badges[1] = create_badge(localize('k_planet_q') or card_type, card_type_colour, nil, 1.2)
             end
 
@@ -2101,7 +2032,7 @@ local function overrides()
             if self.debuff then return nil end
             local used_tarot = copier or self
             
-            if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and used_tarot.edition then
+            if SMODS.Mods and SMODS.Mods['Bunco'] and used_tarot.edition then
                 if used_tarot.edition.foil then
                     add_tag(Tag('tag_bunc_chips'))
                     play_sound('generic1')
@@ -2219,7 +2150,7 @@ local function overrides()
                     G.TAROT_INTERRUPT_PULSE = nil
                     return true end }))
                 update_hand_text({sound = 'button', volume = 0.7, pitch = 0.9, delay = 0}, {level='+3'})
-                if (planet_edition_enabled and not (SMODS.Mods['aurinko'] or {}).can_load) and self.edition then
+                if planet_edition_enabled and self.edition then
                     if self.edition.holo then
                         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.9, func = function()
                             play_sound('holo1')
@@ -2242,7 +2173,7 @@ local function overrides()
                             update_hand_text({delay = 0}, {mult = 'x' .. tostring(G.P_CENTERS.e_polychrome.config.extra), StatusText = true})
                     end
                     -- Bunco Glitter compat
-                    if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and self.edition.bunc_glitter then
+                    if SMODS.Mods and SMODS.Mods['Bunco'] and self.edition.bunc_glitter then
                         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                             play_sound('bunc_glitter')
                             self:juice_up(0.8, 0.5)
@@ -2250,7 +2181,7 @@ local function overrides()
                         update_hand_text({delay = 0}, {chips = 'x' .. tostring(G.P_CENTERS.e_bunc_glitter.config.Xchips), StatusText = true})
                     end
                     -- Cryptid Mosaic compat
-                    if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and self.edition.cry_mosaic then
+                    if SMODS.Mods and SMODS.Mods['Cryptid'] and self.edition.cry_mosaic then
                         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                             play_sound('cry_e_mosaic')
                             self:juice_up(0.8, 0.5)
@@ -2258,7 +2189,7 @@ local function overrides()
                         update_hand_text({delay = 0}, {chips = 'x' .. tostring(G.P_CENTERS.e_cry_mosaic.config.x_chips), StatusText = true})
                     end
                     -- Cryptid Oversaturated compat
-                    if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and self.edition.cry_oversat then
+                    if SMODS.Mods and SMODS.Mods['Cryptid'] and self.edition.cry_oversat then
                         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                             play_sound('cry_e_oversaturated')
                             self:juice_up(0.8, 0.5)
@@ -2267,7 +2198,7 @@ local function overrides()
                         update_hand_text({delay = 0}, {mult = 'x2', StatusText = true})
                     end
                     -- Cryptid Astral Compat
-                    if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and self.edition.cry_astral then
+                    if SMODS.Mods and SMODS.Mods['Cryptid'] and self.edition.cry_astral then
                         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                             play_sound('talisman_emult')
                             self:juice_up(0.8, 0.5)
@@ -2275,7 +2206,7 @@ local function overrides()
                         update_hand_text({delay = 0}, {mult = '^' .. tostring(G.P_CENTERS.e_cry_astral.config.e_mult), StatusText = true})
                     end
                     -- Cryptid Glitched compat
-                    if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and self.edition.cry_glitched then
+                    if SMODS.Mods and SMODS.Mods['Cryptid'] and self.edition.cry_glitched then
                         G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                             play_sound('cry_e_glitched')
                             self:juice_up(0.8, 0.5)
@@ -2634,13 +2565,13 @@ local function overrides()
                 end
                 delay(0.6)
             end
-        elseif self.ability.name == 'Black Hole' and (planet_edition_enabled and not (SMODS.Mods['aurinko'] or {}).can_load) then    -- Manage Black Hole if planet editions is enabled
+        elseif self.ability.name == 'Black Hole' and planet_edition_enabled then    -- Manage Black Hole if planet editions is enabled
             stop_use()
             if not copier then set_consumeable_usage(self) end
             if self.debuff then return nil end
             local used_tarot = copier or self
             
-            if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and used_tarot.edition then
+            if SMODS.Mods and SMODS.Mods['Bunco'] and used_tarot.edition then
                 if used_tarot.edition.foil then
                     add_tag(Tag('tag_bunc_chips'))
                     play_sound('generic1')
@@ -2701,7 +2632,7 @@ local function overrides()
                         update_hand_text({delay = 0}, {mult = 'x' .. tostring(G.P_CENTERS.e_polychrome.config.extra), StatusText = true})
                 end
                 -- Bunco Glitter compat
-                if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and self.edition.bunc_glitter then
+                if SMODS.Mods and SMODS.Mods['Bunco'] and self.edition.bunc_glitter then
                     G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                         play_sound('bunc_glitter')
                         self:juice_up(0.8, 0.5)
@@ -2709,7 +2640,7 @@ local function overrides()
                     update_hand_text({delay = 0}, {chips = 'x' .. tostring(G.P_CENTERS.e_bunc_glitter.config.Xchips), StatusText = true})
                 end
                 -- Cryptid Mosaic compat
-                if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and self.edition.cry_mosaic then
+                if SMODS.Mods and SMODS.Mods['Cryptid'] and self.edition.cry_mosaic then
                     G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                         play_sound('cry_e_mosaic')
                         self:juice_up(0.8, 0.5)
@@ -2717,7 +2648,7 @@ local function overrides()
                     update_hand_text({delay = 0}, {chips = 'x' .. tostring(G.P_CENTERS.e_cry_mosaic.config.x_chips), StatusText = true})
                 end
                 -- Cryptid Oversaturated compat
-                if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and self.edition.cry_oversat then
+                if SMODS.Mods and SMODS.Mods['Cryptid'] and self.edition.cry_oversat then
                     G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                         play_sound('cry_e_oversaturated')
                         self:juice_up(0.8, 0.5)
@@ -2726,7 +2657,7 @@ local function overrides()
                     update_hand_text({delay = 0}, {mult = 'x2', StatusText = true})
                 end
                 -- Cryptid Astral Compat
-                if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and self.edition.cry_astral then
+                if SMODS.Mods and SMODS.Mods['Cryptid'] and self.edition.cry_astral then
                     G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                         play_sound('talisman_emult')
                         self:juice_up(0.8, 0.5)
@@ -2734,7 +2665,7 @@ local function overrides()
                     update_hand_text({delay = 0}, {mult = '^' .. tostring(G.P_CENTERS.e_cry_astral.config.e_mult), StatusText = true})
                 end
                 -- Cryptid Glitched compat
-                if SMODS.Mods and (SMODS.Mods['Cryptid'] or {}).can_load and self.edition.cry_glitched then
+                if SMODS.Mods and SMODS.Mods['Cryptid'] and self.edition.cry_glitched then
                     G.E_MANAGER:add_event(Event({trigger = 'after', delay = 0.3, func = function()
                         play_sound('cry_e_glitched')
                         self:juice_up(0.8, 0.5)
@@ -2756,7 +2687,7 @@ local function overrides()
             if self.debuff then return nil end
             local used_tarot = copier or self
             
-            if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and used_tarot.edition then
+            if SMODS.Mods and SMODS.Mods['Bunco'] and used_tarot.edition then
                 if used_tarot.edition.foil then
                     add_tag(Tag('tag_bunc_chips'))
                     play_sound('generic1')
@@ -3773,7 +3704,7 @@ local function overrides()
             return
         end
         -- Check for bunco suit buff
-        if SMODS.Mods and (SMODS.Mods['Bunco'] or {}).can_load and self.base and self.base.suit and G.GAME.used_cu_augments and ((self.base.suit == 'bunc_Fleurons' and G.GAME.used_cu_augments.c_bunc_sky_cu) or (self.base.suit == 'bunc_Halberds' and G.GAME.used_cu_augments.c_bunc_abyss_cu)) then   -- Overwrite
+        if SMODS.Mods and SMODS.Mods['Bunco'] and self.base and self.base.suit and G.GAME.used_cu_augments and ((self.base.suit == 'bunc_Fleurons' and G.GAME.used_cu_augments.c_bunc_sky_cu) or (self.base.suit == 'bunc_Halberds' and G.GAME.used_cu_augments.c_bunc_abyss_cu)) then   -- Overwrite
             self.debuff = false
             self.ability.debuff_by_curse_rolls = {}
             return

@@ -366,12 +366,12 @@ function generate_card_ui(_c, full_UI_table, specific_vars, card_type, badges, h
             elseif _c.name == 'Silver DX' then info_queue[#info_queue+1] = G.P_CENTERS.m_lucky
             elseif _c.name == 'Stone DX' then info_queue[#info_queue+1] = G.P_CENTERS.m_stone
             elseif _c.name == 'Cobalt DX' then 
-                local loc_text = "Not chosen"
+                local loc_text = "未选定"
                 if G.hand then
                 local text,disp_text = G.FUNCS.get_poker_hand_info(G.hand.highlighted)
                 loc_text = localize(text, 'poker_hands')
                 if loc_text == "ERROR" then
-                    loc_text = "Not chosen"
+                    loc_text = "未选定"
                 end
                 end
                 loc_vars = {loc_text}
@@ -534,17 +534,18 @@ end
 
 -- Load the DX alchemical cards
 function load_dx_alchemical_cards()
-    
+
     local alchemy_ignis_def = {
-        name = "Ignis DX",
+        name = "火·豪华",
         text = {
-            "Gain {C:attention}+2{} discards"
+            "在本盲注内",
+            "弃牌次数{C:attention}+2"
         }
     }
 
     local alchemy_ignis = CodexArcanum.Alchemical:newDX("Ignis", "ignis", {extra = 2}, { x = 0, y = 0 }, alchemy_ignis_def, 5)
     alchemy_ignis:registerDX()
-        
+
     function CodexArcanum.DXAlchemicals.c_alchemy_ignis_dx.can_use(card)
         return true
     end
@@ -557,15 +558,16 @@ function load_dx_alchemical_cards()
 
 
     local alchemy_aqua_def = {
-        name = "Aqua DX",
+        name = "水·豪华",
         text = {
-            "Gain {C:attention}+2{} hands"
+            "在本盲注内",
+            "出牌次数{C:attention}+2"
         }
     }
 
     local alchemy_aqua = CodexArcanum.Alchemical:newDX("Aqua", "aqua", {extra = 2}, { x = 1, y = 0 }, alchemy_aqua_def, 5)
     alchemy_aqua:registerDX()
-                
+
     function CodexArcanum.DXAlchemicals.c_alchemy_aqua_dx.can_use(card)
         return true
     end
@@ -578,44 +580,44 @@ function load_dx_alchemical_cards()
 
 
     local alchemy_terra_def = {
-        name = "Terra DX",
+        name = "地·豪华",
         text = {
-            "Reduce blind by {C:attention}30%{}"
+            "削减盲注的最低得分要求至{C:attention}70%"
         }
     }
 
-    local alchemy_terra = CodexArcanum.Alchemical:newDX("Terra", "terra", {extra = 0.7}, { x = 2, y = 0 }, alchemy_terra_def, 5)
+    local alchemy_terra = CodexArcanum.Alchemical:newDX("Terra", "terra", {extra = 70}, { x = 2, y = 0 }, alchemy_terra_def, 5)
     alchemy_terra:registerDX()
-                          
+
     function CodexArcanum.DXAlchemicals.c_alchemy_terra_dx.can_use(card)
         return true
     end
 
     function CodexArcanum.DXAlchemicals.c_alchemy_terra_dx.use(card, area, copier)
         G.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.1,func = function()
-            G.GAME.blind.chips = math.floor(G.GAME.blind.chips * card.ability.extra)
+            G.GAME.blind.chips = math.floor(G.GAME.blind.chips * card.ability.extra / 100)
             G.GAME.blind.chip_text = number_format(G.GAME.blind.chips)
-            
+
             local chips_UI = G.hand_text_area.blind_chips
             G.FUNCS.blind_chip_UI_scale(G.hand_text_area.blind_chips)
             G.HUD_blind:recalculate() 
             chips_UI:juice_up()
-    
+
             if not silent then play_sound('chips2') end
         return true end }))
     end
 
 
     local alchemy_aero_def = {
-        name = "Aero DX",
+        name = "气·豪华",
         text = {
-            "Draw {C:attention}8{} cards"
+            "抽{C:attention}8{}张牌"
         }
     }
 
     local alchemy_aero = CodexArcanum.Alchemical:newDX("Aero", "aero", {extra = 8}, { x = 3, y = 0 }, alchemy_aero_def, 5)
     alchemy_aero:registerDX()
-            
+
     function CodexArcanum.DXAlchemicals.c_alchemy_aero_dx.can_use(card)
         return true
     end
@@ -626,18 +628,18 @@ function load_dx_alchemical_cards()
         return true end }))
     end
 
-    
+
     local alchemy_quicksilver_def = {
-        name = "Quicksilver DX",
+        name = "汞·豪华",
         text = {
-            "{C:attention}+4{} hand size",
-            "for this blind"
+            "本盲注内",
+            "手牌上限{C:attention}+4"
         }
     }
 
     local alchemy_quicksilver = CodexArcanum.Alchemical:newDX("Quicksilver", "quicksilver", {extra = 4}, { x = 4, y = 0 }, alchemy_quicksilver_def, 5)
     alchemy_quicksilver:registerDX()
-            
+
     function CodexArcanum.DXAlchemicals.c_alchemy_quicksilver_dx.can_use(card)
         return true
     end
@@ -660,7 +662,7 @@ function load_dx_alchemical_cards()
 
     local alchemy_salt = CodexArcanum.Alchemical:newDX("Salt", "salt", {extra = 2}, { x = 5, y = 0 }, alchemy_salt_def, 5)
     alchemy_salt:registerDX()
-            
+
     function CodexArcanum.DXAlchemicals.c_alchemy_salt_dx.can_use(card)
         return true
     end
@@ -676,14 +678,14 @@ function load_dx_alchemical_cards()
                     it = it + 1
                     _tag_name = pseudorandom_element(_pool, pseudoseed(_pool_key..'_resample'..it))
                 end
-    
+
                 G.GAME.round_resets.blind_tags = G.GAME.round_resets.blind_tags or {}
                 local _tag = Tag(_tag_name, nil, G.GAME.blind)
                 add_tag(_tag)
             return true end }))
         end
     end
-    
+
 
     local alchemy_sulfur_def = {
         name = "Sulfur DX",
@@ -696,7 +698,7 @@ function load_dx_alchemical_cards()
 
     local alchemy_sulfur = CodexArcanum.Alchemical:newDX("Sulfur", "sulfur", {extra = 6}, { x = 0, y = 1 }, alchemy_sulfur_def, 5)
     alchemy_sulfur:registerDX()
-            
+
     function CodexArcanum.DXAlchemicals.c_alchemy_sulfur_dx.can_use(card)
         return true
     end
@@ -1317,35 +1319,35 @@ end
 
 -- Load the DX alchemical boosters
 function load_dx_alchemical_packs()
-    G.localization.misc.dictionary["k_alchemy_pack_dx"] = "Alchemy Pack DX"
+    G.localization.misc.dictionary["k_alchemy_pack_dx"] = "豪华炼金包"
 
     G.localization.descriptions["Other"]["p_alchemy_normal_dx"] = {
-      name = "Alchemy Pack DX",
+      name = "豪华炼金包",
       text = {
-          "Choose {C:attention}#1#{} of up to",
-          "{C:attention}#2#{C:alchemical} Alchemical{} cards to",
-          "add to your consumeables",
-            "{C:inactive}(You feel lucky...)"
+          "从最多{C:attention}#2#{}张{C:alchemical}炼金牌{}中",
+          "选择{C:attention}#1#{}张",
+          "添加至消耗牌槽位",
+            "{C:inactive}（你感到运气满满……）"
       }
     }
   
     G.localization.descriptions["Other"]["p_alchemy_jumbo_dx"] = {
-      name = "Jumbo Alchemy Pack DX",
+      name = "巨型豪华炼金包",
       text = {
-          "Choose {C:attention}#1#{} of up to",
-          "{C:attention}#2#{C:alchemical} Alchemical{} cards to",
-          "add to your consumeables",
-            "{C:inactive}(You feel lucky...)"
+          "从最多{C:attention}#2#{}张{C:alchemical}炼金牌{}中",
+          "选择{C:attention}#1#{}张",
+          "添加至消耗牌槽位",
+            "{C:inactive}（你感到运气满满……）"
       }
     }
   
     G.localization.descriptions["Other"]["p_alchemy_mega_dx"] = {
-      name = "Mega Alchemy Pack DX",
+      name = "超级豪华炼金包",
       text = {
-          "Choose {C:attention}#1#{} of up to",
-          "{C:attention}#2#{C:alchemical} Alchemical{} cards to",
-          "add to your consumeables",
-            "{C:inactive}(You feel lucky...)"
+          "从最多{C:attention}#2#{}张{C:alchemical}炼金牌{}中",
+          "选择{C:attention}#1#{}张",
+          "添加至消耗牌槽位",
+            "{C:inactive}（你感到运气满满……）"
       }
     }
   
@@ -1444,7 +1446,7 @@ function CodexArcanum.LoadDX()
         sprite:register();
     end
     
-	G.P_CENTER_POOLS.Alchemical_dx = {}
+    G.P_CENTER_POOLS.Alchemical_dx = {}
 	G.localization.descriptions.Alchemical_dx = {}
 
     load_dx_alchemical_cards()
