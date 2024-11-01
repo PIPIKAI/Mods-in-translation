@@ -26,9 +26,9 @@ SMODS.Atlas({
 SMODS.Enhancement {
 	key = 'rainbow',
 	loc_txt = {
-		name = "Rainbow Card",
+		name = "彩虹牌",
 		text = {
-			'{X:mult,C:white,s:1.1}X3{} Mult',
+			'{X:mult,C:white,s:1.1}X3{} 倍率',
 		}
 	},
 	config = {Xmult = 3},
@@ -46,8 +46,8 @@ SMODS.Consumable {
     loc_txt = {
         name = 'Spectrum',
         text = {
-            'Enhances up to {C:attention}2{} cards into',
-            '{C:red,E:1,s:2}R{}{C:attention,E:1,s:2}a{}{C:gold,E:1,s:2}i{}{C:green,E:1,s:2}n{}{C:chips,E:1,s:2}b{}{C:purple,E:1,s:2}o{}{E:1,s:2}w{} Cards'}
+            '将 {C:attention}2{}张牌变为',
+            '{C:red,E:1,s:2}彩{}{C:attention,E:1,s:2}虹{}{E:1,s:2}牌{} '}
     },
     set = ('Spectral'),
     atlas = "consumables",
@@ -102,11 +102,12 @@ SMODS.Consumable {
 SMODS.Consumable {
     key = 'heart',
     loc_txt = {
-        name = 'The Heart',
+        name = '红桃',
         text = {
-            'Converts {C:attention}ALL{} Cards',
-            'In hand into{C:red} Hearts',
-            'lose {C:gold}$5' }
+            '失去 {C:gold}$5' ,
+            '将 {C:attention}所有{} 手牌',
+            '变为{C:blue} 红桃',
+        }
     },
     set = ('Tarot'),
     atlas = "consumables",
@@ -157,11 +158,12 @@ SMODS.Consumable {
 SMODS.Consumable {
     key = 'club',
     loc_txt = {
-        name = 'The Club',
+        name = '梅花',
         text = {
-            'Converts {C:attention}ALL{} Cards',
-            'In hand into{C:green} Clubs',
-            'lose {C:gold}$5' }
+            '失去 {C:gold}$5' ,
+            '将 {C:attention}所有{} 手牌',
+            '变为{C:blue} 梅花',
+        }
     },
     set = ('Tarot'),
     atlas = "consumables",
@@ -212,11 +214,12 @@ SMODS.Consumable {
 SMODS.Consumable {
     key = 'diamond',
     loc_txt = {
-        name = 'The Diamond',
+        name = '方块',
         text = {
-            'Converts {C:attention}ALL{} Cards',
-            'In hand into{C:attention} Diamonds',
-            'lose {C:gold}$5' }
+            '失去 {C:gold}$5' ,
+            '将 {C:attention}所有{} 手牌',
+            '变为{C:blue} 方块',
+        }
     },
     set = ('Tarot'),
     atlas = "consumables",
@@ -267,11 +270,12 @@ SMODS.Consumable {
 SMODS.Consumable {
     key = 'spade',
     loc_txt = {
-        name = 'The Spade',
+        name = '黑桃',
         text = {
-            'Converts {C:attention}ALL{} Cards',
-            'In hand into{C:blue} Spades',
-            'lose {C:gold}$5' }
+            '失去 {C:gold}$5' ,
+            '将 {C:attention}所有{} 手牌',
+            '变为{C:blue} 黑桃',
+        }
     },
     set = ('Tarot'),
     atlas = "consumables",
